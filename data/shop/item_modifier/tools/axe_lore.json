@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+            "text": ""
+        },
+        {
+          "text": "死亡すると、斧のレベルがひとつ下がった",
+          "color": "gray",
+          "italic": false
+        },
+        {
+            "text": "状態でリスポーンする。",
+            "color": "gray",
+            "italic": false
+          }
+      ],
+      "mode": "append"
+    }
+  ]
+  

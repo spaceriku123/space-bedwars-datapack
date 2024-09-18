@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "チーム全員の防具全てに、ダメージ軽減が付与される。",
+          "color": "gray",
+          "italic": false
+        },
+        {
+            "text": "買い足すことで、ダメージ軽減のレベルが上がる。",
+            "color": "gray",
+            "italic": false
+          }
+      ],
+      "mode": "append"
+    }
+  ]
+  

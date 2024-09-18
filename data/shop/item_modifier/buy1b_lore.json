@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "クリックして購入",
+          "color": "green",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

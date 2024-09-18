@@ -1,0 +1,57 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": "Bow (Power I, Punch I)",
+                  "color": "green"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "コスト: ",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "6 Emerald",
+                        "color": "green",
+                        "italic": false
+                      }
+                    ]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{shop:bow3}"
+              },
+              {
+                "function": "set_enchantments",
+                "enchantments": {
+                    "power": 1,
+                    "punch": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

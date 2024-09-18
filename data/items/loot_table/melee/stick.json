@@ -1,0 +1,43 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stick",
+            "functions": [
+                {
+                    "function": "set_name",
+                    "target": "item_name",
+                    "name": "Knockback Stick"
+                },
+                {
+                    "function": "set_enchantments",
+                    "enchantments": {
+                        "knockback": 1
+                    }
+                },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:can_break": {
+                    "predicates": [
+                      {
+                        "blocks": "#bedwars:blocks"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

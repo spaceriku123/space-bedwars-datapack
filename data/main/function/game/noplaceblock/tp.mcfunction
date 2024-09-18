@@ -1,0 +1,2 @@
+execute if score @s player_id = @n[type=item_display,tag=noplaceblock] player_id run execute at @s run tp @n[type=item_display,tag=noplaceblock] ~ ~1 ~
+title @s actionbar {"text": "この高さからブロックの設置・破壊はできません","color": "red"}

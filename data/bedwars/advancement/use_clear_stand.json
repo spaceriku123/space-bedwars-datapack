@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "flags": {
+              "is_sneaking": true
+            }
+          },
+          "item": {
+            "components": {
+              "minecraft:custom_data": "{item:\"clear_stand\"}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "main:clear_stand/use_clear_stand"
+    }
+  }
+  

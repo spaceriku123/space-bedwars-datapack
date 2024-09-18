@@ -1,0 +1,55 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "コスト",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " 採掘速度上昇 I -> ",
+          "color": "green",
+          "italic": false,
+          "extra": [
+            {
+              "text": "2 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " 採掘速度上昇 II -> ",
+          "color": "green",
+          "italic": false,
+          "extra": [
+            {
+              "text": "4 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+            "text": ""
+        },
+        {
+            "text": "既に全てのレベルを購入しています！",
+            "color": "red",
+            "italic": false
+        }
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    }
+  ]
+  

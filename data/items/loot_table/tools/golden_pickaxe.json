@@ -1,0 +1,47 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_pickaxe"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_count",
+            "count": 1
+          },
+          {
+            "function": "minecraft:set_custom_data",
+            "tag": "{item:golden_pickaxe}"
+          },
+          {
+            "function": "minecraft:set_enchantments",
+            "enchantments": {
+              "minecraft:efficiency": 2,
+              "sharpness": 2
+            }
+          },
+          {
+            "function": "minecraft:set_components",
+            "components": {
+              "minecraft:unbreakable": {
+                "show_in_tooltip": false
+              },
+              "minecraft:can_break": {
+                "predicates": [
+                  {
+                    "blocks": "#bedwars:blocks"
+                  }
+                ],
+                "show_in_tooltip": false
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

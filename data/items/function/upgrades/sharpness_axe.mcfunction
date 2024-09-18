@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand items:upgrades/sharpness_axe

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "open_shop1": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:chest_minecart",
+            "nbt": "{Tags:[\"shop2\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "shop:shop2/open"
+    }
+  }
+  

@@ -1,0 +1,31 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_bed",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": " Teamを選択する (メインハンドに持ってRight-click)"
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item:team_select}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

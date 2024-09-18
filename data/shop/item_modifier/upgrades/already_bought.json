@@ -1,0 +1,23 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "既に購入しています！",
+          "color": "red",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    }
+  ]
+  

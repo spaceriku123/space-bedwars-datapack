@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "自分の陣地のジェネレーターの生成効率を上昇させる。",
+          "color": "gray",
+          "italic": false
+        },
+        {
+            "text": "買い足すことで、ジェネレーターのレベルが上がる。",
+            "color": "gray",
+            "italic": false
+          }
+      ],
+      "mode": "append"
+    }
+  ]
+  

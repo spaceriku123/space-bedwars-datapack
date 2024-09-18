@@ -1,0 +1,42 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:egg",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": "Bridge Egg"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item:bridge_egg}"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:can_break": {
+                    "predicates": [
+                      {
+                        "blocks": "#bedwars:blocks"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

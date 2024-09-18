@@ -1,0 +1,19 @@
+[
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "place_popup_tower": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"player\"]}"
+      }
+    }
+  ]
+  

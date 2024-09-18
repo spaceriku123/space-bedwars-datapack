@@ -1,0 +1,13 @@
+scoreboard players reset @s buy_diamond_armor
+
+clear @s emerald 6
+
+item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}]
+item replace entity @s armor.feet with diamond_boots[unbreakable={show_in_tooltip:false}]
+
+execute unless score @s rank_armor matches 3.. run scoreboard players set @s rank_armor 3
+
+tellraw @s [{"text": "Diamond Armor","color": "gold"},{"text": " を購入しました。","color": "green"}]
+execute at @s run playsound block.note_block.pling master @s ~ ~ ~
+
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=shop1] player_id as @n[type=chest_minecart,tag=shop1] run function shop:shop1/page/armor

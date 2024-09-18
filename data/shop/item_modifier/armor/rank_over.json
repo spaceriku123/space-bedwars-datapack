@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "既にこのレベル以上の防具を購入しています！",
+          "color": "red",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

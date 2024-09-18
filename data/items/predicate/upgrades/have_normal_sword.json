@@ -1,0 +1,25 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "components": {
+              "minecraft:custom_data": "{sword:normal}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "level_sharpness": {
+          "min": 1
+        }
+      }
+    }
+  ]
+  

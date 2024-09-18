@@ -1,0 +1,65 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "コスト",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " レベル 1: +50%の生成 -> ",
+          "color": "green",
+          "italic": false,
+          "extra": [
+            {
+              "text": "2 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " レベル 2: +100%の生成 -> ",
+          "color": "green",
+          "italic": false,
+          "extra": [
+            {
+              "text": "4 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " レベル 3: エメラルドの生成 -> ",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "6 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " レベル 4: +200%の生成 -> ",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "8 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

@@ -1,0 +1,1 @@
+advancement revoke @a only items:use_fireball

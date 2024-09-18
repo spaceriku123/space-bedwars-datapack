@@ -1,0 +1,32 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:furnace",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": "Molten Forge",
+                  "color": "yellow"
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{shop:forge}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

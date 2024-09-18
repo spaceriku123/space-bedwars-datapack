@@ -1,0 +1,23 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gray_stained_glass_pane",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:hide_tooltip": {},
+                  "minecraft:custom_data": "{shop:empty}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

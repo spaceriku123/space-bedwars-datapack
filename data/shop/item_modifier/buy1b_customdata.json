@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{buy:1b}"
+  }
+]

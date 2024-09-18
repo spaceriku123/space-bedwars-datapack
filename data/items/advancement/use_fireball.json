@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:fire_charge",
+            "components": {
+              "minecraft:custom_data": "{item:fireball}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "items:fireball/use"
+    }
+  }
+  

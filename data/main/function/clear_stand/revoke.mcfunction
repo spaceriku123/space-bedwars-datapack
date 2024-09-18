@@ -1,0 +1,1 @@
+advancement revoke @a only bedwars:use_clear_stand

@@ -1,0 +1,65 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "コスト",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ダメージ軽減 I -> ",
+          "color": "green",
+          "italic": false,
+          "extra": [
+            {
+              "text": "2 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " ダメージ軽減 II -> ",
+          "color": "green",
+          "italic": false,
+          "extra": [
+            {
+              "text": "4 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " ダメージ軽減 III -> ",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "8 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " ダメージ軽減 IV -> ",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "16 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

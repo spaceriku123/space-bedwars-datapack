@@ -1,0 +1,15 @@
+[
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{buy:0b}"
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "name": {
+          "text": "✗",
+          "color": "red"
+        }
+    }
+  ]
+  

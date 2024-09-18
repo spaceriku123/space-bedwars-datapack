@@ -1,0 +1,41 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "コスト",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " 採掘速度上昇 I -> ",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "2 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": " 採掘速度上昇 II -> ",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "4 Diamond",
+              "color": "aqua",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

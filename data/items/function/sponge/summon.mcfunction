@@ -1,0 +1,2 @@
+execute positioned ~ ~ ~ unless entity @e[type=marker,tag=sponge,distance=..0.1] run particle poof ~ ~ ~ 1 1 1 0.1 1000
+execute positioned ~ ~ ~ unless entity @e[type=marker,tag=sponge,distance=..0.1] run summon marker ~ ~ ~ {Tags:["sponge","new"]}

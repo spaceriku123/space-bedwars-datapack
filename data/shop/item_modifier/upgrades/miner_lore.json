@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "チーム全員に採掘速度上昇が常時付与される。",
+          "color": "gray",
+          "italic": false
+        },
+        {
+            "text": "買い足すことで、採掘速度上昇のレベルが上がる。",
+            "color": "gray",
+            "italic": false
+          }
+      ],
+      "mode": "append"
+    }
+  ]
+  

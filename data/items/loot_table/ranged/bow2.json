@@ -1,0 +1,46 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": "Bow (Power I)",
+                  "color": "white"
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:can_break": {
+                    "predicates": [
+                      {
+                        "blocks": "#bedwars:blocks"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "set_enchantments",
+                "enchantments": {
+                    "power": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
