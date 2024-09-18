@@ -1,6 +1,6 @@
 # space-bedwars-datapack
-bedwarsが遊べるデータパックです。
-このデータパックを遊ぶには、[space-bedwars-resourcepack](https://github.com/spaceriku13/space-bedwars-resourcepack)を入れる必要があります。
+- bedwarsが遊べるデータパックです。
+- このデータパックを遊ぶには、[space-bedwars-resourcepack](https://github.com/spaceriku13/space-bedwars-resourcepack)を入れる必要があります。
 青い文字をクリックして飛んだページからダウンロードしてください。
 ## バージョン
  Minecraft 1.21
