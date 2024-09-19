@@ -1,7 +1,7 @@
 {
     "pack": {
         "pack_format": 48,
-        "description": "BedWars Datapack"
+        "description": "BedWars Datapack v0.0.3"
     },
     "filter": {
         "block": [
