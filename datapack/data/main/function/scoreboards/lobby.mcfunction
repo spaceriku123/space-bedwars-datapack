@@ -22,4 +22,4 @@ execute if score $mode mode matches 2 run scoreboard players display name $mode 
 #info
 scoreboard players display name $info1 lobby [{"text": " /trigger <チームの色>","color": "aqua"},{"text": " で","color": "white"}]
 scoreboard players display name $info2 lobby [{"text": " 好きなチームに入れます。"}]
-scoreboard players display name $credit lobby {"text": "by SpaceRiku"}
+scoreboard players display name $credit lobby {"text": "by spaceriku123"}

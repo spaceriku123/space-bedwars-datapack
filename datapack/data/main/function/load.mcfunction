@@ -223,4 +223,4 @@ bossbar set gray_dragon color pink
     scoreboard objectives add forge_gold dummy
 
 #lobby place
-execute at @e[type=armor_stand,tag=lobby] positioned ~-14 ~-4 ~-14 run place template bedwars:lobby
+execute at @e[type=armor_stand,tag=lobby,tag=template] positioned ~-14 ~-4 ~-14 run place template bedwars:lobby
