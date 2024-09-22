@@ -46,4 +46,5 @@
 - 動画配信での利用時、できればこの配布ページを添付してください！
 ## 連絡先
 X：[@spaceriku123](https://x.com/spaceriku123)
+
 YouTube：[@spaceriku123](https://www.youtube.com/@spaceriku123)
