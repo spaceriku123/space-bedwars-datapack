@@ -1,4 +1,4 @@
-bedwarsが遊べるデータパックです。
+bedwarsが遊べるデータパック`です`。
 
 **専用リソースパックがあります（必須）。[こちら](https://github.com/spaceriku13/space-bedwars-resourcepack)からダウンロードしてください。**
 ## バージョン
