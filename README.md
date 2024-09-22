@@ -40,6 +40,6 @@ OP権限者は、`/function bedwars:gamestart` を実行してゲームをスタ
 ## 利用規約
 利用規約は事前の通知なく変更されることがあります。
 - MIT licenseの範囲内で利用可能
-- 動画配信での利用、および収益加可能
+- 動画配信での利用、および収益化可能
 ## 連絡先
 X：[@spaceriku123](https://x.com/spaceriku123)
