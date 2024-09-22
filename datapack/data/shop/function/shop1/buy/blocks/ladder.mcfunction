@@ -1,5 +1,7 @@
 scoreboard players reset @s buy_ladder
-
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 clear @s iron_ingot 4
 
 loot give @s loot items:blocks/ladder

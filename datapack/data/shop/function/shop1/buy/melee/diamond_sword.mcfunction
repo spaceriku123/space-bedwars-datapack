@@ -1,5 +1,7 @@
 scoreboard players reset @s buy_diamond_sword
-
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 clear @s emerald 4
 
 loot give @s loot items:melee/diamond_sword

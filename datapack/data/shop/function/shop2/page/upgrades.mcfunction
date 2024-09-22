@@ -24,3 +24,7 @@ loot replace entity @s container.14 loot shop:shop2/empty
 loot replace entity @s container.15 loot shop:shop2/empty
 loot replace entity @s container.16 loot shop:shop2/empty
 loot replace entity @s container.17 loot shop:shop2/empty
+
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory

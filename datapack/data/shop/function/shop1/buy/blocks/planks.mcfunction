@@ -1,5 +1,7 @@
 scoreboard players reset @s buy_planks
-
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 clear @s gold_ingot 4
 
 loot give @s loot items:blocks/planks

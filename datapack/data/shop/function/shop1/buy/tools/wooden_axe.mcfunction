@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_wooden_axe
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 clear @s iron_ingot 10
 

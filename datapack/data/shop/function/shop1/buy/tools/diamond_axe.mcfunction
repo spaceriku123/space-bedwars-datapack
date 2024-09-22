@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_diamond_axe
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 clear @s gold_ingot 6
 clear @s *[custom_data={item:iron_axe}] 1

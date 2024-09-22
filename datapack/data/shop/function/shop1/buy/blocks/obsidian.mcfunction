@@ -1,5 +1,7 @@
 scoreboard players reset @s buy_obsidian
-
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 clear @s emerald 4
 
 loot give @s loot items:blocks/obsidian

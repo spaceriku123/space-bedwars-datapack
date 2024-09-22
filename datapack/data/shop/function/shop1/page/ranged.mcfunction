@@ -18,3 +18,7 @@ function shop:shop1/page/ranged/arrow
 function shop:shop1/page/ranged/bow
 function shop:shop1/page/ranged/bow2
 function shop:shop1/page/ranged/bow3
+
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory

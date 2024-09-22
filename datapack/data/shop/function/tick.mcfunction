@@ -1,6 +1,8 @@
+function shop:clear_shopitems
+
 #click check
-execute if entity @a[tag=shopping1] as @a[tag=shopping1] run function shop:shop1/clickcheck
-execute if entity @a[tag=shopping2] as @a[tag=shopping2] run function shop:shop2/clickcheck
+execute if entity @a[tag=shop1_open] as @a[tag=shop1_open] run function shop:shop1/clickcheck
+execute if entity @a[tag=shop2_open] as @a[tag=shop2_open] run function shop:shop2/clickcheck
 
 #shop 1 check
 execute as @a[tag=!shopping1,predicate=shop:shopping/shop1] at @s if entity @e[tag=npcshop1,distance=..4] run function shop:shop1/summon

@@ -18,5 +18,6 @@ function shop:shop1/page/armor/chainmail_armor
 function shop:shop1/page/armor/iron_armor
 function shop:shop1/page/armor/diamond_armor
 
-#gui name
-#data modify entity @s CustomName set value '{"text": "防具"}'
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory

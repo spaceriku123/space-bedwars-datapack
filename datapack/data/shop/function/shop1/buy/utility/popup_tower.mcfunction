@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_popup_tower
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 clear @s iron_ingot 24
 

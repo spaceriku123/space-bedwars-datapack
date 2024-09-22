@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_iron_pickaxe
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 clear @s iron_ingot 10
 clear @s *[custom_data={item:wooden_pickaxe}] 1

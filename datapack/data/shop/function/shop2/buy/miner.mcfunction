@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_miner
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 #team score
 execute if entity @s[team=red] run scoreboard players add @a[team=red] level_miner 1

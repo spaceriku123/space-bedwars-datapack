@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_sponge
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 clear @s gold_ingot 4
 

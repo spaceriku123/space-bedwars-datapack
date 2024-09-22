@@ -17,3 +17,7 @@ function shop:shop1/page/menu
 function shop:shop1/page/potion/potion_invisibility
 function shop:shop1/page/potion/potion_speed
 function shop:shop1/page/potion/potion_jump
+
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory

@@ -22,3 +22,7 @@ function shop:shop1/page/utility/water_bucket
 function shop:shop1/page/utility/bridge_egg
 function shop:shop1/page/utility/sponge
 function shop:shop1/page/utility/popup_tower
+
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory

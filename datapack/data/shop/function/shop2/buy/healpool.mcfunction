@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_healpool
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 #team score
 execute if entity @s[team=red] run scoreboard players set @a[team=red] level_healpool 1

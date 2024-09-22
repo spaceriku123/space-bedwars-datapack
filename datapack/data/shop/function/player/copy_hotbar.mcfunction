@@ -1,0 +1,9 @@
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.0 from entity @n[type=chest_minecart,tag=hotbar] container.0
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.1 from entity @n[type=chest_minecart,tag=hotbar] container.1
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.2 from entity @n[type=chest_minecart,tag=hotbar] container.2
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.3 from entity @n[type=chest_minecart,tag=hotbar] container.3
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.4 from entity @n[type=chest_minecart,tag=hotbar] container.4
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.5 from entity @n[type=chest_minecart,tag=hotbar] container.5
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.6 from entity @n[type=chest_minecart,tag=hotbar] container.6
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.7 from entity @n[type=chest_minecart,tag=hotbar] container.7
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run item replace entity @s hotbar.8 from entity @n[type=chest_minecart,tag=hotbar] container.8

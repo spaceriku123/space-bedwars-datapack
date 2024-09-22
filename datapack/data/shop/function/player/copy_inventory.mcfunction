@@ -1,0 +1,29 @@
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.0 from entity @n[type=chest_minecart,tag=inventory] container.0
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.1 from entity @n[type=chest_minecart,tag=inventory] container.1
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.2 from entity @n[type=chest_minecart,tag=inventory] container.2
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.3 from entity @n[type=chest_minecart,tag=inventory] container.3
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.4 from entity @n[type=chest_minecart,tag=inventory] container.4
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.5 from entity @n[type=chest_minecart,tag=inventory] container.5
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.6 from entity @n[type=chest_minecart,tag=inventory] container.6
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.7 from entity @n[type=chest_minecart,tag=inventory] container.7
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.8 from entity @n[type=chest_minecart,tag=inventory] container.8
+
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.9 from entity @n[type=chest_minecart,tag=inventory] container.9
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.10 from entity @n[type=chest_minecart,tag=inventory] container.10
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.11 from entity @n[type=chest_minecart,tag=inventory] container.11
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.12 from entity @n[type=chest_minecart,tag=inventory] container.12
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.13 from entity @n[type=chest_minecart,tag=inventory] container.13
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.14 from entity @n[type=chest_minecart,tag=inventory] container.14
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.15 from entity @n[type=chest_minecart,tag=inventory] container.15
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.16 from entity @n[type=chest_minecart,tag=inventory] container.16
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.17 from entity @n[type=chest_minecart,tag=inventory] container.17
+
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.18 from entity @n[type=chest_minecart,tag=inventory] container.18
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.19 from entity @n[type=chest_minecart,tag=inventory] container.19
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.20 from entity @n[type=chest_minecart,tag=inventory] container.20
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.21 from entity @n[type=chest_minecart,tag=inventory] container.21
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.22 from entity @n[type=chest_minecart,tag=inventory] container.22
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.23 from entity @n[type=chest_minecart,tag=inventory] container.23
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.24 from entity @n[type=chest_minecart,tag=inventory] container.24
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.25 from entity @n[type=chest_minecart,tag=inventory] container.25
+execute at @s if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run item replace entity @s inventory.26 from entity @n[type=chest_minecart,tag=inventory] container.26

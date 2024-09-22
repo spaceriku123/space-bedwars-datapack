@@ -1,5 +1,7 @@
 scoreboard players reset @s buy_diamond_armor
-
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 clear @s emerald 6
 
 item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}]

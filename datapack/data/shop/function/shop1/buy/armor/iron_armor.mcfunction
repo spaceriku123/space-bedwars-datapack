@@ -1,5 +1,7 @@
 scoreboard players reset @s buy_iron_armor
-
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 clear @s gold_ingot 12
 
 item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_tooltip:false}]

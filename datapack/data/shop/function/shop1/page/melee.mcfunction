@@ -20,5 +20,6 @@ function shop:shop1/page/melee/diamond_sword
 function shop:shop1/page/melee/stick
 execute if score $mode mode matches 1 run function shop:shop1/page/melee/mace
 
-#gui name
-#data modify entity @s CustomName set value '{"text": "近接武器"}'
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory

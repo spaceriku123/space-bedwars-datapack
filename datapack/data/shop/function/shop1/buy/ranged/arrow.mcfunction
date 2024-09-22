@@ -1,4 +1,7 @@
 scoreboard players reset @s buy_arrow
+#copy
+execute as @s run function shop:player/copy_hotbar
+execute as @s run function shop:player/copy_inventory
 
 clear @s gold_ingot 2
 

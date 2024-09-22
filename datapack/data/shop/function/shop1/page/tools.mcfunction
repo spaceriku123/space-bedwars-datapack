@@ -31,5 +31,6 @@ execute if score $mode mode matches 1 run function shop:shop1/page/tools/fishing
 # function shop:shop1/page/tools/iron_axe
 # function shop:shop1/page/tools/diamond_axe
 
-#gui name
-#data modify entity @s CustomName set value '{"text": "道具"}'
+# copy
+execute at @s as @p run function shop:chest_minecart/copy_hotbar
+execute at @s as @p run function shop:chest_minecart/copy_inventory
