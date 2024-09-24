@@ -4,9 +4,9 @@
 ## バージョン
  Minecraft Java Edition 1.21.1
 ## インストール方法 How-to-Install
-1. [Releases](https://github.com/spaceriku123/space-bedwars-datapack/releases)より、space-bedwars-vX.X.X.zipをダウンロードする。
+1. [Releases](https://github.com/spaceriku123/space-bedwars-datapack/releases)より、space-bedwars.zipをダウンロードする。
 2. ベッドウォーズを遊ぶためのワールドを用意する。(自作、配布ワールドのどちらもOK)
-3. ワールド内のdatapacksフォルダの中にspace-bedwars-vX.X.X.zipを入れる。
+3. ワールド内のdatapacksフォルダの中にspace-bedwars.zipを入れる。
 4. ワールドに入り、一度 `/reload` を実行してデータパックの再起動を行う。
 ## 使い方 How-to-Use
 ### セットアップ
