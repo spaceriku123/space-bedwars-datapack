@@ -45,5 +45,3 @@
 - 動画配信での利用、および収益化可能
 ## 連絡先
 X：[@spaceriku123](https://x.com/spaceriku123)
-
-YouTube：[@spaceriku123](https://www.youtube.com/@spaceriku123)
