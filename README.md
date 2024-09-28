@@ -34,6 +34,7 @@
 #### OP ITEM
 - `/function bedwars:op_item/<OP ITEMの種類>` でOPアイテムを設定できる。
 ##### OP ITEMの種類
+ - なし
  - メイス
  - 今後追加予定...
 ### チームの入り方
