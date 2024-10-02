@@ -1,13 +1,17 @@
 {
     "pack": {
         "pack_format": 48,
-        "description": "BedWars Datapack v0.0.4"
+        "description": "BedWars Datapack v0.1.2"
     },
     "filter": {
         "block": [
             {
                 "namespace": "minecraft",
                 "path": "recipe/.*"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "advancement/.*"
             }
         ]
     }

@@ -1,4 +1,3 @@
-tellraw @s ""
 #kills
 execute as @s run tellraw @s [{"text": " "},{"text": "Kills: "},{"score": {"name": "@s","objective": "kills"},"color": "green"}]
 #finalkills

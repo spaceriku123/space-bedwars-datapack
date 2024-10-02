@@ -24,3 +24,4 @@
 
 #rotation
     execute as @e[tag=npc] at @s rotated as @n[tag=shop] run tp ^ ^ ^
+    function shop:npc_rotate

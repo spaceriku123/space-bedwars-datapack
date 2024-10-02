@@ -7,6 +7,8 @@ team add white
 team add pink
 team add gray
 
+team add spectator
+
 # team modify red prefix {"text": "🏴 ","color": "red"}
 team modify red color red
 team modify red friendlyFire false
@@ -29,5 +31,14 @@ team modify white friendlyFire false
 team modify pink color light_purple
 team modify pink friendlyFire false
 # team modify gray prefix {"text": "🏴 ","color": "dark_gray"}
-team modify gray color gray
+team modify gray color dark_gray
 team modify gray friendlyFire false
+
+team modify red collisionRule never
+team modify blue collisionRule never
+team modify green collisionRule never
+team modify yellow collisionRule never
+team modify aqua collisionRule never
+team modify white collisionRule never
+team modify pink collisionRule never
+team modify gray collisionRule never

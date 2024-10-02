@@ -17,14 +17,14 @@ execute if entity @s[team=gray] run scoreboard players set @a[team=gray] level_s
 clear @s diamond 4
 
 #tellraw
-execute if entity @s[team=red] run tellraw @a[team=red] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=blue] run tellraw @a[team=blue] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=green] run tellraw @a[team=green] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=yellow] run tellraw @a[team=yellow] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=aqua] run tellraw @a[team=aqua] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=white] run tellraw @a[team=white] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=pink] run tellraw @a[team=pink] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
-execute if entity @s[team=gray] run tellraw @a[team=gray] [{"text": "Sharpness Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=red] run tellraw @a[team=red] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=blue] run tellraw @a[team=blue] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=green] run tellraw @a[team=green] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=yellow] run tellraw @a[team=yellow] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=aqua] run tellraw @a[team=aqua] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=white] run tellraw @a[team=white] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=pink] run tellraw @a[team=pink] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
+execute if entity @s[team=gray] run tellraw @a[team=gray] [{"text": "Sharpened Swords","color": "gold"},{"text": " を購入しました。","color": "gold"}]
 
 #playsound
 execute if entity @s[team=red] as @a[team=red] at @s run playsound block.enchantment_table.use master @s ~ ~ ~

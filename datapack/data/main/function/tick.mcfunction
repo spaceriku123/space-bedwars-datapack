@@ -25,3 +25,5 @@ execute as @e[type=ender_dragon,team=aqua] store result bossbar aqua_dragon valu
 execute as @e[type=ender_dragon,team=white] store result bossbar white_dragon value run data get entity @s Health
 execute as @e[type=ender_dragon,team=pink] store result bossbar pink_dragon value run data get entity @s Health
 execute as @e[type=ender_dragon,team=gray] store result bossbar gray_dragon value run data get entity @s Health
+
+execute if entity @a[tag=ingame] run function main:game/tick

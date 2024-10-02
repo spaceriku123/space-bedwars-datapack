@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "トラップのスロットが埋まっています！",
+          "color": "red",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

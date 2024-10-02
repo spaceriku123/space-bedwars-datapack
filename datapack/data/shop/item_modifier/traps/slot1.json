@@ -1,0 +1,27 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "自分の陣地に侵入した 1人目",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "の敵にこのトラップが発動される。",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "mode": "replace_all"
+    },
+    {
+      "function": "minecraft:set_count",
+      "count": 1
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{shop:empty}"
+    }
+  ]
+  

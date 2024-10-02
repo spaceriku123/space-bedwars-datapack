@@ -23,6 +23,11 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {
+                    "text": "Heal Pool",
+                    "color": "dark_gray",
+                    "italic": false 
+                  },
+                  {
                     "text": "自分の陣地にいる際、再生能力 I が常時付与される。",
                     "color": "gray",
                     "italic": false

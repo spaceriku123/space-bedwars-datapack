@@ -30,6 +30,18 @@ execute if entity @e[type=egg,tag=bridge] as @e[type=egg,tag=bridge] run functio
     execute as @e[tag=tower_pink,tag=!new] run function items:popup_tower/tower_pink
     execute as @e[tag=tower_gray,tag=!new] run function items:popup_tower/tower_gray
     
+#magic milk
+    execute as @a if score @s use_magic_milk matches 1.. run function items:magic_milk/use
+    execute as @a[tag=magic_milk] run function items:magic_milk/timer
+
+#bedbugs
+    execute as @a if score @s use_bedbugs matches 1.. run function items:bedbugs/add_tags
+    execute as @e[type=snowball] at @s run function items:bedbugs/aec_summon with entity @s
+    execute as @e[type=area_effect_cloud,tag=snowballDeath,nbt={Age:2}] at @s run function items:bedbugs/check with entity @s
+    execute as @e[type=silverfish,tag=bedbugs] run function items:bedbugs/kill
+
+#dream defender
+    execute as @e[type=iron_golem,tag=mob,tag=!anger] run function items:dream_defender/anger
 
 #clear bucket
 clear @a bucket
@@ -48,4 +60,4 @@ execute as @e[tag=spawn,type=armor_stand] if score @s level_healpool matches 1 r
 
 
 #schedule
-schedule function items:tick 1t
+# schedule function items:tick 1t

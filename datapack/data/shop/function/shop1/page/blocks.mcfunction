@@ -21,7 +21,7 @@ function shop:shop1/page/blocks/endstone
 function shop:shop1/page/blocks/ladder
 function shop:shop1/page/blocks/planks
 function shop:shop1/page/blocks/obsidian
-execute if score $mode mode matches 1 run function shop:shop1/page/blocks/cobweb
+function shop:shop1/page/blocks/cobweb
 
 # copy
 execute at @s as @p run function shop:chest_minecart/copy_hotbar

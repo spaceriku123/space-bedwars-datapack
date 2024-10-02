@@ -38,4 +38,4 @@ scoreboard players set $game_timer game_timer 600
 schedule function main:game/timer/gameend_timer 1s
 
 #spawn bedrock
-execute at @e[tag=spawn] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 bedrock
+# execute at @e[tag=spawn] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 bedrock

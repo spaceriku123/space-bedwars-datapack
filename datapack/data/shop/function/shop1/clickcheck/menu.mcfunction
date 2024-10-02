@@ -19,3 +19,6 @@ execute if score @s page_potion matches 1.. run execute at @s if score @s player
 
 execute store result score @s page_utility run clear @s *[custom_data={page:utility}]
 execute if score @s page_utility matches 1.. run execute at @s if score @s player_id = @n[type=chest_minecart,tag=shop1] player_id as @n[type=chest_minecart,tag=shop1] run function shop:shop1/page/utility
+
+execute store result score @s page_op_item run clear @s *[custom_data={page:op_item}]
+execute if score @s page_op_item matches 1.. run execute at @s if score @s player_id = @n[type=chest_minecart,tag=shop1] player_id as @n[type=chest_minecart,tag=shop1] run function shop:shop1/page/op_item

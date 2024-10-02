@@ -61,6 +61,14 @@ tag @a remove final
 tag @a remove gameover
 tag @a remove noplaceblock
 tag @a remove team_select
+tag @a remove magic_milk
+tag @a remove trap_cooldown
+tag @a remove alarm
+tag @a remove invisible_armor
+tag @a remove respawn
+
+#respawn attribute
+execute as @a run attribute @s generic.knockback_resistance base set 0.0
 
 #gamerules
 difficulty easy
@@ -77,6 +85,8 @@ gamerule keepInventory true
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule spawnRadius 0
+gamerule universalAnger true
+gamerule forgiveDeadPlayers false
 
 #test scoreboard
 #function main:scoreboards/test
@@ -113,6 +123,8 @@ schedule clear main:game/start_timer
 schedule clear items:tick
 schedule clear main:game/gameover_fireworks
 schedule clear main:generator/spin
+schedule clear main:game/traps/tick
+schedule clear shop:npc_rotate
 
 #kill display (generator)
 kill @e[type=block_display,tag=generator]
@@ -158,15 +170,7 @@ execute at @e[tag=lobby] run worldborder center ~ ~
 execute at @e[tag=lobby] run worldborder set 400
 execute as @a at @s run playsound entity.arrow.hit_player master @s ~ ~ ~
 
-# scoreboard objectives remove lobby
-# scoreboard objectives add lobby dummy
-# scoreboard objectives modify lobby displayname {"text": "BedWars Player","bold": true}
-# scoreboard objectives modify lobby numberformat blank
-# scoreboard players reset @a lobby
-
 scoreboard objectives add mode dummy
-execute unless score $mode mode matches 2 as @a run attribute @s generic.attack_speed base set 4.0
-execute unless score $mode mode matches 2 run scoreboard players set $mode mode 1
 
 execute if entity @e[type=armor_stand,tag=lobby] run function main:lobby
 function main:scoreboards/lobby
@@ -224,3 +228,11 @@ bossbar set gray_dragon color pink
 
 #lobby place
 execute at @e[type=armor_stand,tag=lobby,tag=template] positioned ~-14 ~-4 ~-14 run place template bedwars:lobby
+
+#team spectator
+team leave @a[team=spectator]
+
+#kill mob
+kill @e[tag=mob]
+
+tag @a remove ingame

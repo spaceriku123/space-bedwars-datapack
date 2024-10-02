@@ -6,6 +6,8 @@ execute as @e[tag=bed] at @s run setblock ~ ~ ~ air
 tag @a add final
 
 execute as @a at @s run playsound entity.wither.death master @s ~ ~ ~ 0.6
+
+title @a times 10 40 10
 title @a subtitle {"text": "All beds have been destroyed!","color": "white"}
 title @a title {"text": "BED DESTROYED!","color": "red"}
 

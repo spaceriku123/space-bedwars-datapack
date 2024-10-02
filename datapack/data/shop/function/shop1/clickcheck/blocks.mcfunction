@@ -1,5 +1,5 @@
 ##blocks page
-execute store result score @s buy0b run clear @s *[item_name='{"text": "✗","color": "red"}']
+execute store result score @s buy0b run clear @s *[item_name='{"text": "✘","color": "red"}']
 execute if score @s buy0b matches 1.. run function shop:shop1/buy/0b
 
 execute store result score @s buy_wools run clear @s *[custom_data={shop:wools,buy:1b}]

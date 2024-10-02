@@ -23,12 +23,12 @@ scoreboard players display name $space2 test ""
 scoreboard players display name $space3 test ""
 
 scoreboard players display name $generator test [{"text": "Diamond II in "},{"text": "6  Mins","color": "green"}]
-scoreboard players display name $red test [{"text": "🏴 ","color": "red"},{"text": "Red: ","color": "white"},{"text": "✓","color": "green","bold": true},{"text": " YOU","color": "gray"}]
-scoreboard players display name $blue test [{"text": "🏴 ","color": "blue"},{"text": "Blue: ","color": "white"},{"text": "✓","color": "green","bold": true}]
-scoreboard players display name $green test [{"text": "🏴 ","color": "green"},{"text": "Green: ","color": "white"},{"text": "✓","color": "green","bold": true}]
-scoreboard players display name $yellow test [{"text": "🏴 ","color": "yellow"},{"text": "Yellow: ","color": "white"},{"text": "✓","color": "green","bold": true}]
-scoreboard players display name $aqua test [{"text": "🏴 ","color": "aqua"},{"text": "Aqua: ","color": "white"},{"text": "✓","color": "green","bold": true}]
-scoreboard players display name $white test [{"text": "🏴 ","color": "white"},{"text": "White: ","color": "white"},{"text": "✓","color": "green","bold": true}]
-scoreboard players display name $pink test [{"text": "🏴 ","color": "light_purple"},{"text": "Pink: ","color": "white"},{"text": "✓","color": "green","bold": true}]
-scoreboard players display name $gray test [{"text": "🏴 ","color": "dark_gray"},{"text": "Gray: ","color": "white"},{"text": "✓","color": "green","bold": true}]
+scoreboard players display name $red test [{"text": "🏴 ","color": "red"},{"text": "Red: ","color": "white"},{"text": "✔","color": "green"},{"text": " YOU","color": "gray"}]
+scoreboard players display name $blue test [{"text": "🏴 ","color": "blue"},{"text": "Blue: ","color": "white"},{"text": "✔","color": "green"}]
+scoreboard players display name $green test [{"text": "🏴 ","color": "green"},{"text": "Green: ","color": "white"},{"text": "✔","color": "green"}]
+scoreboard players display name $yellow test [{"text": "🏴 ","color": "yellow"},{"text": "Yellow: ","color": "white"},{"text": "✔","color": "green"}]
+scoreboard players display name $aqua test [{"text": "🏴 ","color": "aqua"},{"text": "Aqua: ","color": "white"},{"text": "✔","color": "green"}]
+scoreboard players display name $white test [{"text": "🏴 ","color": "white"},{"text": "White: ","color": "white"},{"text": "✔","color": "green"}]
+scoreboard players display name $pink test [{"text": "🏴 ","color": "light_purple"},{"text": "Pink: ","color": "white"},{"text": "✔","color": "green"}]
+scoreboard players display name $gray test [{"text": "🏴 ","color": "dark_gray"},{"text": "Gray: ","color": "white"},{"text": "✔","color": "green"}]
 scoreboard players display name $hamano1234567 test {"text": "by hamano1234567","color": "gold"}

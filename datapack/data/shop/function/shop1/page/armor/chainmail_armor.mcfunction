@@ -1,5 +1,6 @@
 ##stick
 loot replace entity @s container.1 loot shop:shop1/armor/chainmail_armor
+item modify entity @s container.1 shop:armor/armor_lore
 
 execute at @s unless score @p rank_armor matches 1.. if score @p irons matches 40.. run item modify entity @s container.1 shop:buy1b_lore
 execute at @s unless score @p rank_armor matches 1.. if score @p irons matches 40.. run item modify entity @s container.1 shop:buy1b_customdata

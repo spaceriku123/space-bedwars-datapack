@@ -23,6 +23,7 @@ schedule clear main:game/timer/gameend_timer_60
 schedule clear main:game/gameend
 schedule clear main:game/tick
 schedule clear main:game/start_timer
+schedule clear main:game/traps/tick
 
 #scoreboard
 scoreboard players display name $time info [{"text": "GAME END","color": "red"}]
@@ -33,3 +34,5 @@ title @a title [{"text": "GAME OVER!","color": "red","bold": true}]
 
 #tellraw
 function main:game/tellraw/gameend
+
+tag @a remove ingame

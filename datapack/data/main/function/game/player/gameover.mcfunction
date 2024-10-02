@@ -12,18 +12,21 @@ execute store result score @s diamonds run clear @s diamond 0
 execute store result score @s emeralds run clear @s emerald 0
 
 tag @s remove arrow_victim
+tag @s remove alarm
+scoreboard players reset @s alarm_timer
 
 tag @s add gameover
 
 tellraw @a {"text": "FINAL KILL!","color": "aqua","bold": true}
 tellraw @s {"text": "脱落しました！","color": "red","bold": true}
+
 execute if entity @a[tag=killer] run function main:game/player/killer_getsmoney
 scoreboard players add @a[tag=killer] finalkills 1
 tag @a remove killer
 # execute at @s run effect give @a[distance=..4] resistance 1 99 true
 # execute at @s run summon lightning_bolt
 
-execute at @e[tag=lobby] run tp @s ~ ~20 ~ 0 0
+execute at @e[tag=lobby] run tp @s ~ ~ ~ 0 0
 
 execute if entity @s[team=red] run function main:game/destroy_bed/scoreboard/red
 execute if entity @s[team=blue] run function main:game/destroy_bed/scoreboard/blue
@@ -51,3 +54,6 @@ execute if entity @a[team=gray,tag=!gameover] run scoreboard players add @s team
 execute if score @s team matches ..1 run function main:game/gameover
 
 execute unless score @s team matches ..1 as @s run function main:game/player/tellraw/result
+
+tag @s remove magic_milk
+scoreboard players reset @s magic_milk_timer

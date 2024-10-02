@@ -21,15 +21,7 @@ function shop:shop1/page/menu
 function shop:shop1/page/tools/shears
 function shop:shop1/page/tools/pickaxe
 function shop:shop1/page/tools/axe
-execute if score $mode mode matches 1 run function shop:shop1/page/tools/fishing_rod
-# function shop:shop1/page/tools/wooden_pickaxe
-# function shop:shop1/page/tools/iron_pickaxe
-# function shop:shop1/page/tools/golden_pickaxe
-# function shop:shop1/page/tools/diamond_pickaxe
-# function shop:shop1/page/tools/wooden_axe
-# function shop:shop1/page/tools/stone_axe
-# function shop:shop1/page/tools/iron_axe
-# function shop:shop1/page/tools/diamond_axe
+function shop:shop1/page/tools/fishing_rod
 
 # copy
 execute at @s as @p run function shop:chest_minecart/copy_hotbar

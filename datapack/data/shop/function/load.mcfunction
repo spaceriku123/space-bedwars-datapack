@@ -8,6 +8,7 @@ scoreboard objectives add page_tools dummy
 scoreboard objectives add page_ranged dummy
 scoreboard objectives add page_potion dummy
 scoreboard objectives add page_utility dummy
+scoreboard objectives add page_op_item dummy
 
 scoreboard objectives add page_upgrade dummy
 
@@ -98,6 +99,9 @@ scoreboard objectives add buy_ender_pearl dummy
 scoreboard objectives add buy_water_bucket dummy
 scoreboard objectives add buy_bridge_egg dummy
 scoreboard objectives add buy_popup_tower dummy
+scoreboard objectives add buy_magic_milk dummy
+scoreboard objectives add buy_dream_defender dummy
+scoreboard objectives add buy_bedbugs dummy
 # scoreboard objectives add buy_slime dummy
 
 #========== item shop ==========
@@ -112,3 +116,11 @@ scoreboard objectives add buy_protection dummy
 scoreboard objectives add buy_healpool dummy
 scoreboard objectives add buy_miner dummy
 scoreboard objectives add buy_forge dummy
+
+scoreboard objectives add buy_its_a_trap dummy
+scoreboard objectives add buy_counter_trap dummy
+scoreboard objectives add buy_alarm_trap dummy
+scoreboard objectives add buy_miner_fatigue_trap dummy
+
+scoreboard objectives remove have_traps
+scoreboard objectives add have_traps dummy

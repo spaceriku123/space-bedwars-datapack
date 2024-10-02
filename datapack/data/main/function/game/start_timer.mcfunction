@@ -8,7 +8,8 @@ execute if score $timer start_timer matches 1..5 as @a at @s run playsound ui.bu
 
 #tellraw
     execute if score $timer start_timer matches 10 run tellraw @a [{"text": "Game Starting in ","color": "yellow"},{"text": "10","color": "red"},{"text": " seconds!"}]
-    execute if score $timer start_timer matches 1..5 run tellraw @a [{"text": "Game Starting in ","color": "yellow"},{"score": {"name": "$timer","objective": "start_timer"},"color": "red"},{"text": " seconds!"}]
+    execute if score $timer start_timer matches 2..5 run tellraw @a [{"text": "Game Starting in ","color": "yellow"},{"score": {"name": "$timer","objective": "start_timer"},"color": "red"},{"text": " seconds!"}]
+    execute if score $timer start_timer matches 1 run tellraw @a [{"text": "Game Starting in ","color": "yellow"},{"text": "1","color": "red"},{"text": " second!"}]
 
 execute if score $timer start_timer matches 0 run function main:game/start
 

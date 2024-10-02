@@ -1,0 +1,2 @@
+execute if score @s magic_milk_timer matches 20..300 run function items:magic_milk/timer/59-30/59-45
+execute if score @s magic_milk_timer matches 320..600 run function items:magic_milk/timer/59-30/44-30

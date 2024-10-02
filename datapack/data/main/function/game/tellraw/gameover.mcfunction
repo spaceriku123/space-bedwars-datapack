@@ -7,7 +7,7 @@ execute if entity @a[team=white,tag=!gameover] run tellraw @a [{"text": "■■�
 execute if entity @a[team=pink,tag=!gameover] run tellraw @a [{"text": "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■","color": "light_purple"}]
 execute if entity @a[team=gray,tag=!gameover] run tellraw @a [{"text": "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■","color": "gray"}]
 
-tellraw @a ""
+execute if entity @a[tag=!gameover] run tellraw @a ""
 
 execute if entity @a[team=red,tag=!gameover] run tellraw @a [{"text": "🏴 Red Team won! 🏴","color": "red"}]
 execute if entity @a[team=blue,tag=!gameover] run tellraw @a [{"text": "🏴 Blue Team won! 🏴","color": "blue"}]
@@ -18,10 +18,12 @@ execute if entity @a[team=white,tag=!gameover] run tellraw @a [{"text": "🏴 Wh
 execute if entity @a[team=pink,tag=!gameover] run tellraw @a [{"text": "🏴 Pink Team won! 🏴","color": "light_purple"}]
 execute if entity @a[team=gray,tag=!gameover] run tellraw @a [{"text": "🏴 Gray Team won! 🏴","color": "gray"}]
 
+execute if entity @a[tag=!gameover] run tellraw @a ""
+
 # result
     execute as @a run function main:game/player/tellraw/result
 
-tellraw @a ""
+execute if entity @a[tag=!gameover] run tellraw @a ""
 
 execute if entity @a[team=red,tag=!gameover] run tellraw @a [{"text": "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■","color": "red"}]
 execute if entity @a[team=blue,tag=!gameover] run tellraw @a [{"text": "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■","color": "blue"}]

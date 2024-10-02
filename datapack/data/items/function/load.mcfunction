@@ -22,5 +22,16 @@ scoreboard objectives add tower_timer dummy
 scoreboard objectives remove tower_facing
 scoreboard objectives add tower_facing dummy
 
+scoreboard objectives remove use_magic_milk
+scoreboard objectives add use_magic_milk used:milk_bucket
+
+scoreboard objectives remove magic_milk_timer
+scoreboard objectives add magic_milk_timer dummy
+
+scoreboard objectives remove use_bedbugs
+scoreboard objectives add use_bedbugs used:snowball
+
+scoreboard objectives add bedbugs_timer dummy
+
 schedule clear items:tick
 kill @e[type=armor_stand,tag=tower]

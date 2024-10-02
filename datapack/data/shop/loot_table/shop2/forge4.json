@@ -20,6 +20,17 @@
                 }
               },
               {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": "Molten Forge",
+                    "color": "dark_gray",
+                    "italic": false 
+                  }
+                ],
+                "mode": "append"
+              },
+              {
                 "function": "minecraft:set_custom_data",
                 "tag": "{shop:forge}"
               }

@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": ""
+        },
+        {
+          "text": "死亡してもロストせずにリスポーンする。",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+  

@@ -1,0 +1,53 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tripwire_hook",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": "It's a Trap!",
+                  "color": "yellow"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "It's a Trap!",
+                    "color": "dark_gray",
+                    "italic": false 
+                  },
+                  {
+                    "text": "盲目と移動速度低下を",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "8秒間付与させる。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{shop:its_a_trap}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

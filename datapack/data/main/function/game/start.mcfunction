@@ -1,3 +1,34 @@
+#clear schedule
+schedule clear main:generator/irons
+schedule clear main:generator/golds
+schedule clear main:generator/diamonds/timer
+schedule clear main:generator/emeralds/timer
+schedule clear main:game/timer/diamond2_timer
+schedule clear main:game/timer/diamond2_timer_60
+schedule clear main:game/timer/emerald2_timer
+schedule clear main:game/timer/emerald2_timer_60
+schedule clear main:game/timer/diamond3_timer
+schedule clear main:game/timer/diamond3_timer_60
+schedule clear main:game/timer/emerald3_timer
+schedule clear main:game/timer/emerald3_timer_60
+schedule clear main:generator/diamonds/tier_ii
+schedule clear main:generator/diamonds/tier_iii
+schedule clear main:generator/emeralds/tier_ii
+schedule clear main:generator/emeralds/tier_iii
+schedule clear main:game/timer/suddendeath_timer
+schedule clear main:game/timer/suddendeath_timer_60
+schedule clear main:game/timer/suddendeath_start
+schedule clear main:game/timer/gameend_timer
+schedule clear main:game/timer/gameend_timer_60
+schedule clear main:game/gameend
+schedule clear main:game/tick
+schedule clear main:game/start_timer
+schedule clear items:tick
+schedule clear main:game/gameover_fireworks
+schedule clear main:generator/spin
+schedule clear main:game/traps/tick
+schedule clear shop:npc_rotate
+
 #start generator
 function main:generator/start
 
@@ -14,19 +45,23 @@ kill @e[type=item]
 #player
 gamemode adventure @a
 effect clear @a
-effect give @a saturation infinite 99 true
+effect give @a saturation infinite 0 true
 xp set @a 0 levels
 xp set @a 0 points
 tag @a remove final
 tag @a remove gameover
 tag @a remove arrow_victim
 tag @s remove hurt_player
+tag @a remove magic_milk
+tag @a remove invisible_armor
 
 scoreboard players set @a level_sharpness 0
 scoreboard players set @a level_protection 0
 scoreboard players set @a level_miner 0
 scoreboard players set @a level_healpool 0
 scoreboard players set @a level_forge 0
+
+scoreboard players set @a have_traps 0
 
 scoreboard objectives add kills dummy
 scoreboard objectives add finalkills dummy
@@ -40,6 +75,17 @@ scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy
 function main:game/player_id
 
+#tp
+execute at @e[tag=spawn_red] run tp @a[team=red] ~ ~ ~
+execute at @e[tag=spawn_blue] run tp @a[team=blue] ~ ~ ~
+execute at @e[tag=spawn_green] run tp @a[team=green] ~ ~ ~
+execute at @e[tag=spawn_yellow] run tp @a[team=yellow] ~ ~ ~
+execute at @e[tag=spawn_aqua] run tp @a[team=aqua] ~ ~ ~
+execute at @e[tag=spawn_white] run tp @a[team=white] ~ ~ ~
+execute at @e[tag=spawn_pink] run tp @a[team=pink] ~ ~ ~
+execute at @e[tag=spawn_gray] run tp @a[team=gray] ~ ~ ~
+
+
 #get items
 execute as @a run loot replace entity @s armor.head loot items:armor/leather_helmet
 execute as @a run loot replace entity @s armor.chest loot items:armor/leather_chestplate
@@ -50,16 +96,6 @@ loot give @a loot items:melee/wooden_sword
 
 #add scoreboards
 function main:scoreboards/info
-
-#tp
-execute at @e[tag=spawn_red] run tp @a[team=red] ~ ~ ~
-execute at @e[tag=spawn_blue] run tp @a[team=blue] ~ ~ ~
-execute at @e[tag=spawn_green] run tp @a[team=green] ~ ~ ~
-execute at @e[tag=spawn_yellow] run tp @a[team=yellow] ~ ~ ~
-execute at @e[tag=spawn_aqua] run tp @a[team=aqua] ~ ~ ~
-execute at @e[tag=spawn_white] run tp @a[team=white] ~ ~ ~
-execute at @e[tag=spawn_pink] run tp @a[team=pink] ~ ~ ~
-execute at @e[tag=spawn_gray] run tp @a[team=gray] ~ ~ ~
 
 #spawnpoint
 #execute at @e[tag=spawn_red,type=armor_stand] run spawnpoint @a[team=red] ~ ~ ~
@@ -114,8 +150,8 @@ gamerule mobExplosionDropDecay false
 tag @e[tag=bed] remove destroyed
 
 #tick on
-function main:game/tick
-function items:tick
+# function main:game/tick
+# function items:tick
 
 #lobby tick off
 schedule clear main:lobby
@@ -126,7 +162,8 @@ execute as @e[type=armor_stand] run data modify entity @s Invisible set value 1b
 #no team
 tag @a[team=] add gameover
 gamemode spectator @a[team=]
-tp @a[team=] 0 150 0 0 0
+execute at @e[type=armor_stand,tag=lobby] run tp @a[team=] ~ ~ ~ 0 0
+team join spectator @a[team=]
 
 #enderchest reset
 execute as @a run item replace entity @s enderchest.0 with air
@@ -162,13 +199,9 @@ execute as @a run item replace entity @s enderchest.24 with air
 execute as @a run item replace entity @s enderchest.25 with air
 execute as @a run item replace entity @s enderchest.26 with air
 
-#mode
-title @a times 10 70 20
-execute if score $mode mode matches 1 run title @a subtitle {"text": "Normal Mode","color": "green"}
-execute if score $mode mode matches 1 as @a run attribute @s generic.attack_speed base set 4.0
-execute if score $mode mode matches 2 run title @a subtitle {"text": "1.8 Mode","color": "light_purple"}
-execute if score $mode mode matches 2 as @a run attribute @s generic.attack_speed base set 1024.0
-# title @a subtitle {"text": "Good Luck!","color": "gold"}
+
+title @a times 10 40 10
+title @a subtitle {"text": "Good Luck!","color": "gold"}
 title @a title {"text": "BedWars","color":"yellow"}
 
 #tellraw
@@ -178,3 +211,16 @@ execute at @e[tag=lobby] run worldborder set 400
 
 #lobby clear
 execute at @e[type=armor_stand,tag=lobby,tag=template] positioned ~-14 ~-4 ~-14 run place template bedwars:lobby_empty
+
+#load traps
+function main:game/traps/load
+
+#version
+execute unless score $version mode matches 1.. run function main:game/version/1.21
+execute if score $version mode matches 1 run function main:game/version/1.8
+
+#respawn time
+scoreboard objectives remove respawn_timer
+scoreboard objectives add respawn_timer dummy
+
+tag @a add ingame

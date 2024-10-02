@@ -29,6 +29,7 @@ schedule clear main:game/gameend
 schedule clear main:game/tick
 schedule clear main:game/start_timer
 schedule clear items:tick
+schedule clear main:game/traps/tick
 
 #scoreboard
 scoreboard players display name $time info [{"text": "GAME END","color": "red"}]
@@ -38,3 +39,5 @@ function main:game/tellraw/gameover
 
 #fireworks
 schedule function main:game/gameover_fireworks 10t
+
+tag @a remove ingame

@@ -1,0 +1,53 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone_torch",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": "Alarm Trap",
+                  "color": "yellow"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Alarm Trap",
+                    "color": "dark_gray",
+                    "italic": false 
+                  },
+                  {
+                    "text": "敵の透明化を解除させて、",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "アラーム音を鳴らす。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{shop:alarm_trap}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

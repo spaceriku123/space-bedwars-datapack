@@ -11,6 +11,7 @@ execute at @e[tag=bed_green] run playsound entity.ender_dragon.ambient master @a
 
 tag @a[team=green] add final
 
+title @a times 10 40 10
 title @a[team=green] subtitle {"text": "You will no longer respawn!","color": "white"}
 title @a[team=green] title {"text": "BED DESTROYED!","color": "red"}
 

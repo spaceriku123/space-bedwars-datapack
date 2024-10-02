@@ -3,7 +3,7 @@ execute store result score $y1 pos run data get entity @s Pos[1] 1000
 scoreboard players add $y1 pos 1500
 execute store result score $z1 pos run data get entity @s Pos[2] 1000
 
-execute at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run summon fireball ~ ~ ~ {ExplosionPower:0b,Tags:["fireball","new"],PortalCooldown:100}
+execute at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run summon fireball ~ ~ ~ {ExplosionPower:2b,Tags:["fireball","new"],PortalCooldown:100}
 # execute at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run summon fireball ~ ~ ~ {ExplosionPower:0b,Tags:["fireball","new"],PortalCooldown:100,Passengers:[{id:"minecraft:marker",Tags:["fireballDeath"]}]}
 execute at @s store result score $x2 pos run data get entity @n[tag=fireball,tag=new] Pos[0] 1000
 execute at @s store result score $y2 pos run data get entity @n[tag=fireball,tag=new] Pos[1] 1000

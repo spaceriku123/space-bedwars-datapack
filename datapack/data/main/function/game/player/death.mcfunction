@@ -13,8 +13,13 @@ scoreboard players set @s death_time 0
 tag @s add death
 
 tag @s remove arrow_victim
+tag @s remove alarm
+scoreboard players reset @s alarm_timer
 
 execute if entity @a[tag=killer] run function main:game/player/killer_getsmoney
 tag @a remove killer
 
-execute at @e[tag=lobby] run tp @s ~ ~20 ~ 0 0
+execute at @e[tag=lobby] run tp @s ~ ~ ~ 0 0
+
+tag @s remove magic_milk
+scoreboard players reset @s magic_milk_timer

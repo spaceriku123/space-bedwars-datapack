@@ -1,0 +1,53 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:feather",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "text": "Counter Trap",
+                  "color": "yellow"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Counter Trap",
+                    "color": "dark_gray",
+                    "italic": false 
+                  },
+                  {
+                    "text": "陣地の近くにいる味方に移動速度上昇 II と",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "跳躍力上昇 II を15秒間付与させる。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{shop:counter_trap}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
