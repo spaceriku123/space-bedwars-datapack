@@ -27,3 +27,6 @@ execute as @e[type=ender_dragon,team=pink] store result bossbar pink_dragon valu
 execute as @e[type=ender_dragon,team=gray] store result bossbar gray_dragon value run data get entity @s Health
 
 execute if entity @a[tag=ingame] run function main:game/tick
+execute if entity @a[tag=ingame] run function items:tick
+execute if entity @a[tag=ingame] run function main:game/traps/tick
+execute if entity @a[tag=ingame] run function shop:npc_rotate

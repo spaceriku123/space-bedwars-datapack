@@ -34,11 +34,11 @@ team modify pink friendlyFire false
 team modify gray color dark_gray
 team modify gray friendlyFire false
 
-team modify red collisionRule never
-team modify blue collisionRule never
-team modify green collisionRule never
-team modify yellow collisionRule never
-team modify aqua collisionRule never
-team modify white collisionRule never
-team modify pink collisionRule never
-team modify gray collisionRule never
+team modify red collisionRule pushOwnTeam
+team modify blue collisionRule pushOwnTeam
+team modify green collisionRule pushOwnTeam
+team modify yellow collisionRule pushOwnTeam
+team modify aqua collisionRule pushOwnTeam
+team modify white collisionRule pushOwnTeam
+team modify pink collisionRule pushOwnTeam
+team modify gray collisionRule pushOwnTeam

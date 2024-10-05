@@ -17,4 +17,4 @@ function main:generator/diamonds/load
 function main:generator/emeralds/load
 
 #display spin
-function main:generator/spin
+# function main:generator/spin

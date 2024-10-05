@@ -12,6 +12,9 @@ execute as @e[tag=irons,type=armor_stand] at @s if score @s irons matches ..2 ru
     
     execute as @e[type=armor_stand,tag=forge] if score @s level_forge matches 4.. at @s if score @s irons matches ..2 run summon item ~ ~0.3 ~ {Item:{id:"minecraft:iron_ingot",count:2,components:{"minecraft:can_break":{predicates:[{blocks:"#bedwars:blocks"}],show_in_tooltip:false}}}}
     # execute as @e[type=armor_stand,tag=forge] if score @s level_forge matches 4.. at @s positioned ~-1 ~ ~-1 if entity @a[dx=2,dz=2] run give @a[dx=2,dz=2] iron_ingot[can_break={predicates:[{blocks:"#bedwars:blocks"}],show_in_tooltip:false}] 2
-    
+
+
+
+
 
 schedule function main:generator/irons 1s

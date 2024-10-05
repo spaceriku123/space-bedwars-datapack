@@ -3,4 +3,4 @@
     execute as @e[type=block_display,tag=generator] at @s run tp @s ~ ~ ~ ~120 ~
 
 #schedule
-    schedule function main:generator/spin 20t
+    # schedule function main:generator/spin 1s

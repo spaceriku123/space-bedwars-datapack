@@ -1,5 +1,5 @@
 #title
-title @a subtitle ""
+title @a subtitle "Border が縮小します！"
 title @a title {"text": "Sudden Death","color": "light_purple"}
 execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~
 
@@ -39,3 +39,6 @@ schedule function main:game/timer/gameend_timer 1s
 
 #spawn bedrock
 # execute at @e[tag=spawn] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 bedrock
+
+#border
+worldborder set 30 360

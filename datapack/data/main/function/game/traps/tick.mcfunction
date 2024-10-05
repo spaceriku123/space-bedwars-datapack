@@ -1,4 +1,4 @@
-schedule function main:game/traps/tick 1t append
+# schedule function main:game/traps/tick 1t append
 
 #traps
 execute as @e[type=armor_stand,tag=bed,tag=!trap_cooldown] if score @s its_a_trap matches 1.. at @s if block ~ ~ ~ red_bed run function main:game/traps/its_a_trap/check

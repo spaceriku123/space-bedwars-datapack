@@ -87,6 +87,7 @@ gamerule doMobSpawning false
 gamerule spawnRadius 0
 gamerule universalAnger true
 gamerule forgiveDeadPlayers false
+gamerule naturalRegeneration true
 
 #test scoreboard
 #function main:scoreboards/test
@@ -167,7 +168,7 @@ execute at @e[tag=lobby] run tp @a ~ ~ ~ 0 0
 execute at @e[tag=lobby] run spawnpoint @a ~ ~ ~ 0
 execute at @e[tag=lobby] run setworldspawn ~ ~ ~ 0
 execute at @e[tag=lobby] run worldborder center ~ ~
-execute at @e[tag=lobby] run worldborder set 400
+execute at @e[tag=lobby] run worldborder set 300
 execute as @a at @s run playsound entity.arrow.hit_player master @s ~ ~ ~
 
 scoreboard objectives add mode dummy

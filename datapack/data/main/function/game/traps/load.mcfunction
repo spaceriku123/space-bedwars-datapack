@@ -19,4 +19,4 @@ scoreboard objectives add alarm_timer dummy
 tag @a remove trap_cooldown
 tag @a remove alarm
 
-function main:game/traps/tick
+# function main:game/traps/tick

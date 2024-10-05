@@ -5,3 +5,7 @@ execute if score $diamonds generator_timer matches 1.. run execute as @e[tag=dia
 execute if score $diamonds generator_timer matches 1 run schedule function main:generator/diamonds/spawn 1s
 
 execute if score $diamonds generator_timer matches 2.. run schedule function main:generator/diamonds/timer 1s
+
+#data
+    execute as @e[type=block_display,tag=generator] run data modify entity @s teleport_duration set value 20
+    execute as @e[type=block_display,tag=generator] at @s run tp @s ~ ~ ~ ~120 ~

@@ -25,3 +25,7 @@ execute if entity @a[team=gray,tag=!gameover] run function main:game/destroy_bed
 scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "10 Mins","color": "white"}]
 scoreboard players set $game_timer game_timer 600
 schedule function main:game/timer/suddendeath_timer 1s
+
+#
+gamerule naturalRegeneration false
+tellraw @a {"text": "即時回復が無効になりました！","color": "red","bold": true}

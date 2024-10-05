@@ -145,6 +145,7 @@ gamerule sendCommandFeedback false
 gamerule doFireTick false
 gamerule keepInventory true
 gamerule mobExplosionDropDecay false
+gamerule naturalRegeneration true
 
 #bed
 tag @e[tag=bed] remove destroyed
@@ -207,7 +208,7 @@ title @a title {"text": "BedWars","color":"yellow"}
 #tellraw
 function main:game/tellraw/gamestart
 
-execute at @e[tag=lobby] run worldborder set 400
+execute at @e[tag=lobby] run worldborder set 300
 
 #lobby clear
 execute at @e[type=armor_stand,tag=lobby,tag=template] positioned ~-14 ~-4 ~-14 run place template bedwars:lobby_empty

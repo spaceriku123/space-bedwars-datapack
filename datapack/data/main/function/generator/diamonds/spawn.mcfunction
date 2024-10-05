@@ -5,3 +5,7 @@ execute if score $diamonds tier matches 2 run scoreboard players set $diamonds g
 execute if score $diamonds tier matches 3 run scoreboard players set $diamonds generator_timer 16
 
 function main:generator/diamonds/timer
+
+#data
+    execute as @e[type=block_display,tag=generator] run data modify entity @s teleport_duration set value 20
+    execute as @e[type=block_display,tag=generator] at @s run tp @s ~ ~ ~ ~120 ~
