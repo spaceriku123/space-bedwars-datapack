@@ -1,5 +1,4 @@
 execute if score $game_timer game_timer matches 60 run function main:game/tellraw/suddendeath_info
-execute if score $game_timer game_timer matches 60 as @a at @s run playsound ui.button.click master @s ~ ~ ~
 execute if score $game_timer game_timer matches 60 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "60","color": "white"}]
 
 execute if score $game_timer game_timer matches 59 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "59","color": "white"}]

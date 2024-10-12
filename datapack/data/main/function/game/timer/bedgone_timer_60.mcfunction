@@ -1,3 +1,4 @@
+execute if score $game_timer game_timer matches 60 run function main:game/tellraw/bedgone_info
 execute if score $game_timer game_timer matches 60 run scoreboard players display name $time info [{"text": "Bed gone -> ","color": "gold"},{"text": "60","color": "white"}]
 
 execute if score $game_timer game_timer matches 59 run scoreboard players display name $time info [{"text": "Bed gone -> ","color": "gold"},{"text": "59","color": "white"}]
