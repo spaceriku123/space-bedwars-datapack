@@ -14,7 +14,7 @@ execute as @a[tag=death] if score @s death_time matches 80 run function main:gam
 execute as @a[tag=death,predicate=main:respawn] run function main:game/player/respawn
 
 #check bed
-function main:game/destroy_bed/check
+execute if entity @a[predicate=main:destroy_bed] run function main:game/destroy_bed/check
 
 scoreboard players reset @a destroy_bed
 

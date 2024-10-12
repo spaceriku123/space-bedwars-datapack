@@ -1,3 +1,7 @@
+#kill entity
+kill @e[type=area_effect_cloud]
+kill @e[type=marker]
+
 #clear schedule
 schedule clear main:generator/irons
 schedule clear main:generator/golds
@@ -46,6 +50,7 @@ kill @e[type=item]
 gamemode adventure @a
 effect clear @a
 effect give @a saturation infinite 0 true
+effect give @a instant_health 1 99 true
 xp set @a 0 levels
 xp set @a 0 points
 tag @a remove final
@@ -225,3 +230,13 @@ scoreboard objectives remove respawn_timer
 scoreboard objectives add respawn_timer dummy
 
 tag @a add ingame
+
+#bed
+execute unless entity @a[team=red] as @e[type=armor_stand,tag=bed_red] run tag @s add destroyed
+execute unless entity @a[team=blue] as @e[type=armor_stand,tag=bed_blue] run tag @s add destroyed
+execute unless entity @a[team=green] as @e[type=armor_stand,tag=bed_green] run tag @s add destroyed
+execute unless entity @a[team=yellow] as @e[type=armor_stand,tag=bed_yellow] run tag @s add destroyed
+execute unless entity @a[team=aqua] as @e[type=armor_stand,tag=bed_aqua] run tag @s add destroyed
+execute unless entity @a[team=white] as @e[type=armor_stand,tag=bed_white] run tag @s add destroyed
+execute unless entity @a[team=pink] as @e[type=armor_stand,tag=bed_pink] run tag @s add destroyed
+execute unless entity @a[team=gray] as @e[type=armor_stand,tag=bed_gray] run tag @s add destroyed

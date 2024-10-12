@@ -4,4 +4,4 @@ execute positioned ~ ~ ~ run effect give @a[distance=..3] resistance 1 3 true
 
 execute at @s run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air replace #bedwars:fireball
 
-# kill @s
+kill @s

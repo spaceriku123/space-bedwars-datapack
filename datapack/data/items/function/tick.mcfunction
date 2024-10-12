@@ -16,8 +16,9 @@ execute if entity @e[type=egg,tag=bridge] as @e[type=egg,tag=bridge] run functio
 
 #fireball
     # execute as @e[tag=fireballDeath] at @s at @n[tag=fireball,distance=..10] run tp @s ~ ~ ~
-    execute as @e[tag=fireball] at @s run function items:fireball/aec_summon with entity @s
-    execute as @e[type=area_effect_cloud,tag=fireballDeath,nbt={Age:2}] at @s run function items:fireball/check with entity @s
+    # execute as @e[tag=fireball] at @s run function items:fireball/aec_summon with entity @s
+    # execute as @e[type=area_effect_cloud,tag=fireballDeath,nbt={Age:2}] at @s run function items:fireball/check with entity @s
+    execute as @e[type=marker,tag=fireballDeath] at @s unless entity @n[type=fireball,tag=fireball,distance=..1] run function items:fireball/death
 
 #pop up tower
     execute as @a[predicate=items:place_popup_tower] at @s run function items:popup_tower/detect
@@ -61,3 +62,6 @@ execute as @e[tag=spawn,type=armor_stand] if score @s level_healpool matches 1 r
 
 #schedule
 # schedule function items:tick 1t
+
+#aec kill
+    # kill @e[type=area_effect_cloud,nbt={Age:3}]

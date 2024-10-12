@@ -1,8 +1,8 @@
 #own team
-    execute as @e[type=armor_stand,tag=bed_blue] at @s if entity @p[predicate=main:destroy_bed,team=blue] run function main:bed/replace
-    execute as @e[type=armor_stand,tag=bed_blue] at @s if entity @p[predicate=main:destroy_bed,team=blue] run tellraw @a[predicate=main:destroy_bed] {"text": "自分のチームのベッドは破壊できません！","color": "red"}
+    execute as @e[type=armor_stand,tag=bed_blue] at @s as @p[predicate=main:destroy_bed] if entity @s[predicate=main:destroy_bed,team=blue] as @e[type=armor_stand,tag=bed_blue] run function main:bed/replace
+    execute as @e[type=armor_stand,tag=bed_blue] at @s as @p[predicate=main:destroy_bed] if entity @s[predicate=main:destroy_bed,team=blue] run tellraw @a[predicate=main:destroy_bed] {"text": "自分のチームのベッドは破壊できません！","color": "red"}
     # execute as @e[type=armor_stand,tag=bed_blue] at @s if entity @p[predicate=main:destroy_bed,team=blue] run scoreboard players reset @a destroy_bed
-    execute as @e[type=armor_stand,tag=bed_blue] at @s if entity @p[predicate=main:destroy_bed,team=blue] run return fail
+    execute as @e[type=armor_stand,tag=bed_blue] at @s as @p[predicate=main:destroy_bed] if entity @s[predicate=main:destroy_bed,team=blue] run return fail
 
 execute as @a[team=blue] at @s run playsound entity.wither.death master @s ~ ~ ~ 0.6
 execute at @e[tag=bed_blue] run playsound entity.ender_dragon.ambient master @a[team=!blue] ~ ~ ~

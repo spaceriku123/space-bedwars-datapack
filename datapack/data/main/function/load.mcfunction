@@ -88,6 +88,8 @@ gamerule spawnRadius 0
 gamerule universalAnger true
 gamerule forgiveDeadPlayers false
 gamerule naturalRegeneration true
+gamerule doFireTick false
+# gamerule doInsomnia false
 
 #test scoreboard
 #function main:scoreboards/test
