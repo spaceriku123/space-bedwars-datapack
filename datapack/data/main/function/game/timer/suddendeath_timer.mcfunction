@@ -1,14 +1,15 @@
 scoreboard players remove $game_timer game_timer 1
 
 #check time
-execute if score $game_timer game_timer matches 540 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "9 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 480 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "8 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 420 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "7 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 360 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "6 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 300 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "5 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 240 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "4 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 180 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "3 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 120 run scoreboard players display name $time info [{"text": "Sudden Death -> ","color": "light_purple"},{"text": "2 Mins","color": "white"}]
+execute if score $game_timer game_timer matches 541..600 run function main:game/timer/suddendeath_timer_60_10
+execute if score $game_timer game_timer matches 481..540 run function main:game/timer/suddendeath_timer_60_9
+execute if score $game_timer game_timer matches 421..480 run function main:game/timer/suddendeath_timer_60_8
+execute if score $game_timer game_timer matches 361..420 run function main:game/timer/suddendeath_timer_60_7
+execute if score $game_timer game_timer matches 301..360 run function main:game/timer/suddendeath_timer_60_6
+execute if score $game_timer game_timer matches 241..300 run function main:game/timer/suddendeath_timer_60_5
+execute if score $game_timer game_timer matches 181..240 run function main:game/timer/suddendeath_timer_60_4
+execute if score $game_timer game_timer matches 121..180 run function main:game/timer/suddendeath_timer_60_3
+execute if score $game_timer game_timer matches 61..120 run function main:game/timer/suddendeath_timer_60_2
 execute if score $game_timer game_timer matches 1..60 run function main:game/timer/suddendeath_timer_60
 
 execute if score $game_timer game_timer matches 1 run schedule function main:game/timer/suddendeath_start 1s

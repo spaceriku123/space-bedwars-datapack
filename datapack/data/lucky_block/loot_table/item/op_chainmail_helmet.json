@@ -1,0 +1,49 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "OP Chainmail Helmet"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_protection": 2,
+                  "minecraft:projectile_protection": 2,
+                  "minecraft:blast_protection": 2,
+                  "minecraft:protection": 2,
+                  "minecraft:unbreaking": 3,
+                  "minecraft:aqua_affinity": 1,
+                  "minecraft:respiration": 2
+                }
+              }
+            ]
+          }
+        ],
+        "functions": [
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:can_break": {
+                    "predicates": [
+                      {
+                        "blocks": "#bedwars:blocks"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+        ]
+      }
+    ]
+  }
+  

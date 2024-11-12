@@ -9,9 +9,10 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
-                  "text": "Jump V Potion (45 Seconds)"
+                  "text": "Jump V Potion (45 Seconds)",
+                  "italic": false
                 }
               },
               {

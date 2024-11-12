@@ -13,10 +13,11 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "BedBugs",
-                  "color": "green"
+                  "color": "green",
+                  "italic": false
                 }
               },
               {
@@ -44,6 +45,11 @@
                   },
                   {
                     "text": "スポーンさせる。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "シルバーフィッシュは15秒で消滅する。",
                     "color": "gray",
                     "italic": false
                   }

@@ -4,8 +4,8 @@ execute as @e[tag=emeralds_tier] run data modify entity @s text set value '{"tex
 tellraw @a [{"text": "💎 "},{"text": "Emerald Generator","color": "green"},{"text": " が レベル 3 に上がりました！","color": "white"}]
 
 #scoreboard
-scoreboard players display name $time info [{"text": "Bed gone -> ","color": "gold"},{"text": "5 Mins","color": "white"}]
+scoreboard players display name $time info [{"text": "Bed gone -> ","color": "gold"},{"text": "6:00","color": "white"}]
 
 #timer reset
-scoreboard players set $game_timer game_timer 300
+scoreboard players set $game_timer game_timer 360
 schedule function main:game/timer/bedgone_timer 1s

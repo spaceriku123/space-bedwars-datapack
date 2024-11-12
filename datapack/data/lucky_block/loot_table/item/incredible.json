@@ -1,0 +1,537 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wooden_sword",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:fire_aspect": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:knockback": {
+                    "min": 0,
+                    "max": 2
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:punch": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "minecraft:flame": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "minecraft:infinity": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "minecraft:power": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_sword",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:fire_aspect": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:knockback": {
+                    "min": 0,
+                    "max": 2
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_shovel",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_pickaxe",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_axe",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_sword",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:fire_aspect": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:knockback": {
+                    "min": 0,
+                    "max": 2
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_shovel",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_pickaxe",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_axe",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_sword",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:fire_aspect": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:knockback": {
+                    "min": 0,
+                    "max": 2
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_shovel",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_pickaxe",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_axe",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_sword",
+            "weight": 15,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:fire_aspect": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:knockback": {
+                    "min": 0,
+                    "max": 2
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_shovel",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_pickaxe",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_axe",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:unbreaking": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "minecraft:efficiency": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:sharpness": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:smite": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "minecraft:bane_of_arthropods": {
+                    "min": 0,
+                    "max": 5
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:can_break": {
+            "predicates": [
+              {
+                "blocks": "#bedwars:blocks"
+              }
+            ],
+            "show_in_tooltip": false
+          }
+        }
+      },
+      {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          {
+            "text": "Incredible!",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "mode": "replace_all"
+      }
+    ]
+  }
+  

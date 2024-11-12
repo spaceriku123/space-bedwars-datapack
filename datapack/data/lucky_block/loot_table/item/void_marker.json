@@ -1,0 +1,56 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:barrier",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "Void Marker"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "しゃがみながら右クリックすると、",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "自分の下のブロックを消去できる。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{item:void_marker}"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:can_break": {
+                    "predicates": [
+                      {
+                        "blocks": "#bedwars:blocks"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

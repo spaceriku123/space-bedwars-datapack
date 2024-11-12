@@ -15,6 +15,7 @@ schedule clear main:generator/diamonds/tier_ii
 schedule clear main:generator/diamonds/tier_iii
 schedule clear main:generator/emeralds/tier_ii
 schedule clear main:generator/emeralds/tier_iii
+schedule clear main:game/timer/bedgone_timer
 schedule clear main:game/timer/suddendeath_timer
 schedule clear main:game/timer/suddendeath_timer_60
 schedule clear main:game/timer/suddendeath_start

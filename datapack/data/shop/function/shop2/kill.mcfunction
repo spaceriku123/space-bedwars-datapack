@@ -6,16 +6,19 @@ execute at @s run execute if score @s player_id = @n[type=chest_minecart,tag=inv
 #kill
 execute at @s run execute if score @s player_id = @n[type=chest_minecart,tag=shop2] player_id run kill @n[type=chest_minecart,tag=shop2]
 execute at @s run execute if score @s player_id = @n[type=item_display,tag=shop2] player_id run kill @n[type=item_display,tag=shop2]
+execute at @s run execute if score @s player_id = @n[type=item_display,tag=shop2_interaction] player_id run kill @n[type=item_display,tag=shop2_interaction]
 execute at @s run execute if score @s player_id = @n[type=marker,tag=shop2] player_id run kill @n[type=marker,tag=shop2]
-execute at @s run execute if score @s player_id = @n[type=interaction,tag=shop2] player_id run kill @n[type=interaction,tag=shop2]
+execute at @s run execute if score @s player_id = @n[type=interaction,tag=shop2_interaction] player_id run kill @n[type=interaction,tag=shop2_interaction]
 tag @s remove shopping2
 
 execute at @s run execute if score @s player_id = @n[type=chest_minecart,tag=hotbar] player_id run kill @n[type=chest_minecart,tag=hotbar]
 execute at @s run execute if score @s player_id = @n[type=item_display,tag=hotbar] player_id run kill @n[type=item_display,tag=hotbar]
+execute at @s run execute if score @s player_id = @n[type=item_display,tag=hotbar_interaction] player_id run kill @n[type=item_display,tag=hotbar_interaction]
 execute at @s run execute if score @s player_id = @n[type=marker,tag=hotbar] player_id run kill @n[type=marker,tag=hotbar]
-execute at @s run execute if score @s player_id = @n[type=interaction,tag=hotbar] player_id run kill @n[type=interaction,tag=hotbar]
+execute at @s run execute if score @s player_id = @n[type=interaction,tag=hotbar_interaction] player_id run kill @n[type=interaction,tag=hotbar_interaction]
 
 execute at @s run execute if score @s player_id = @n[type=chest_minecart,tag=inventory] player_id run kill @n[type=chest_minecart,tag=inventory]
 execute at @s run execute if score @s player_id = @n[type=item_display,tag=inventory] player_id run kill @n[type=item_display,tag=inventory]
+execute at @s run execute if score @s player_id = @n[type=item_display,tag=inventory_interaction] player_id run kill @n[type=item_display,tag=inventory_interaction]
 execute at @s run execute if score @s player_id = @n[type=marker,tag=inventory] player_id run kill @n[type=marker,tag=inventory]
-execute at @s run execute if score @s player_id = @n[type=interaction,tag=inventory] player_id run kill @n[type=interaction,tag=inventory]
+execute at @s run execute if score @s player_id = @n[type=interaction,tag=inventory_interaction] player_id run kill @n[type=interaction,tag=inventory_interaction]

@@ -1,0 +1,50 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_helmet",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "Hot Head"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_protection": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "!minecraft:max_damage": {},
+                  "minecraft:dyed_color": {
+                    "rgb": 16711680,
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:can_break": {
+                    "predicates": [
+                        {
+                         "blocks": "#bedwars:blocks"
+                        }
+                        ],
+                    "show_in_tooltip": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

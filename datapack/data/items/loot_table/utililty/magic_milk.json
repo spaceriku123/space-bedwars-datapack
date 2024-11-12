@@ -22,6 +22,16 @@
               {
                 "function": "minecraft:set_custom_data",
                 "tag": "{item:magic_milk}"
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:consumable": {
+                    "animation": "drink",
+                    "sound": "entity.generic.drink",
+                    "has_consume_particles": false
+                  }
+                }
               }
             ]
           }

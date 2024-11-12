@@ -1,0 +1,1 @@
+$summon skeleton ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"$(Team)",Tags:["lb"],ArmorItems:[{},{},{},{id:"minecraft:leather_helmet",count:1,components:{"minecraft:unbreakable":{}}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],HandItems:[{id:"minecraft:bow",count:1,components:{"minecraft:unbreakable":{}}},{}],HandDropChances:[0.000F,0.085F]}

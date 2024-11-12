@@ -25,9 +25,9 @@ execute as @a at @s run spawnpoint @s ~ ~ ~ ~
 execute at @e[type=armor_stand,tag=lobby] positioned ~-200 -20 ~-200 as @a[tag=player,dx=400,dy=-3,dz=400,gamemode=adventure] run damage @s 1000 out_of_world
 
 #no place block
-execute at @e[type=armor_stand,tag=lobby] positioned ~-200 ~-3 ~-200 as @a[tag=player,dx=400,dy=5,dz=400,gamemode=adventure,tag=!noplaceblock] run function main:game/noplaceblock/summon
-execute at @e[type=armor_stand,tag=lobby] positioned ~-200 ~-3 ~-200 as @a[tag=player,dx=400,dy=5,dz=400,gamemode=adventure,tag=noplaceblock] run function main:game/noplaceblock/tp
-execute at @e[type=armor_stand,tag=lobby] positioned ~-200 ~-3 ~-200 as @a[tag=player,tag=noplaceblock] unless entity @s[dx=400,dy=5,dz=400,gamemode=adventure] run function main:game/noplaceblock/kill
+execute at @e[type=armor_stand,tag=lobby] positioned ~-200 ~-5 ~-200 as @a[tag=player,dx=400,dy=5,dz=400,gamemode=adventure,tag=!noplaceblock] run function main:game/noplaceblock/summon
+execute at @e[type=armor_stand,tag=lobby] positioned ~-200 ~-5 ~-200 as @a[tag=player,dx=400,dy=5,dz=400,gamemode=adventure,tag=noplaceblock] run function main:game/noplaceblock/tp
+execute at @e[type=armor_stand,tag=lobby] positioned ~-200 ~-5 ~-200 as @a[tag=player,tag=noplaceblock] unless entity @s[dx=400,dy=5,dz=400,gamemode=adventure] run function main:game/noplaceblock/kill
 
 #spector
 gamemode spectator @a[team=]

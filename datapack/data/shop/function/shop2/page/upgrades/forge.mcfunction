@@ -38,3 +38,8 @@ execute at @s if score @p level_forge matches 3 if score @p diamonds matches 8..
 execute at @s if score @p level_forge matches 3 unless score @p diamonds matches 8.. run item modify entity @s container.10 shop:buy0b_lore
 execute at @s if score @p level_forge matches 3 unless score @p diamonds matches 8.. run item modify entity @s container.10 shop:buy0b_customdata
 
+
+execute at @s if score @p level_forge matches 0 unless score @p diamonds matches 2.. run item modify entity @s container.10 shop:upgrades/buy0b/forge1
+execute at @s if score @p level_forge matches 1 unless score @p diamonds matches 4.. run item modify entity @s container.10 shop:upgrades/buy0b/forge2
+execute at @s if score @p level_forge matches 2 unless score @p diamonds matches 6.. run item modify entity @s container.10 shop:upgrades/buy0b/forge3
+execute at @s if score @p level_forge matches 3 unless score @p diamonds matches 8.. run item modify entity @s container.10 shop:upgrades/buy0b/forge4

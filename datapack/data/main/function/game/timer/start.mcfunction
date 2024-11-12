@@ -2,7 +2,7 @@
 
 scoreboard objectives remove game_timer
 scoreboard objectives add game_timer dummy
-scoreboard players set $game_timer game_timer 300
+scoreboard players set $game_timer game_timer 360
 
 scoreboard objectives remove tier
 scoreboard objectives add tier dummy

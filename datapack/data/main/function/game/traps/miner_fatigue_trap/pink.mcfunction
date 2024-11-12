@@ -4,9 +4,9 @@ title @a[team=pink] subtitle ""
 title @a[team=pink] title {"text": "Trap Activated!","color": "yellow"}
 
 #@s
-title @s times 10 40 10
-title @s subtitle ""
-title @s title {"text": "Trap Activated!","color": "red"}
+# title @s times 10 40 10
+# title @s subtitle ""
+# title @s title {"text": "Trap Activated!","color": "red"}
 effect give @s mining_fatigue 10 0 true
 
 #tellraw

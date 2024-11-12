@@ -9,10 +9,11 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "target": "item_name",
+              "target": "custom_name",
               "name": {
                 "text": "Invisibility Potion (30 Seconds)",
-                  "color": "green"
+                  "color": "green",
+                  "italic": false
               }
             },
             {

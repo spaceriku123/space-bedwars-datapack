@@ -67,9 +67,6 @@ tag @a remove alarm
 tag @a remove invisible_armor
 tag @a remove respawn
 
-#respawn attribute
-execute as @a run attribute @s generic.knockback_resistance base set 0.0
-
 #gamerules
 difficulty easy
 gamerule announceAdvancements false
@@ -115,6 +112,7 @@ schedule clear main:generator/diamonds/tier_ii
 schedule clear main:generator/diamonds/tier_iii
 schedule clear main:generator/emeralds/tier_ii
 schedule clear main:generator/emeralds/tier_iii
+schedule clear main:game/timer/bedgone_timer
 schedule clear main:game/timer/suddendeath_timer
 schedule clear main:game/timer/suddendeath_timer_60
 schedule clear main:game/timer/suddendeath_start
@@ -154,12 +152,18 @@ scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy
 function main:game/player_id
 
+#attribute
+execute as @a run attribute @s scale base set 1.0
+execute as @a run attribute @s knockback_resistance base set 0.0
+execute as @a run attribute @s gravity base set 0.08
+execute as @s run attribute @s max_health base set 20
+
 #player
 effect clear @a
 effect give @a saturation infinite 0 true
+effect give @s instant_health 1 99 true
 gamemode adventure @a[gamemode=!creative]
-clear @a[gamemode=!creative]
-# loot replace entity @a hotbar.4 loot items:team_select
+clear @a
 
 title @a times 10 70 20
 title @a subtitle ""

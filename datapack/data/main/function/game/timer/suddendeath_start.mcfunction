@@ -31,7 +31,7 @@ execute as @e[tag=lobby] at @s run tp @e[type=ender_dragon] ~ ~ ~
 gamerule mobGriefing true
 
 #scoreboard
-scoreboard players display name $time info [{"text": "Game End -> ","color": "red"},{"text": "10 Mins","color": "white"}]
+scoreboard players display name $time info [{"text": "Game End -> ","color": "red"},{"text": "10:00","color": "white"}]
 
 #timer reset
 scoreboard players set $game_timer game_timer 600

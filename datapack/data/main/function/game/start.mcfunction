@@ -59,6 +59,7 @@ tag @a remove arrow_victim
 tag @s remove hurt_player
 tag @a remove magic_milk
 tag @a remove invisible_armor
+execute as @a run attribute @s knockback_resistance base set 0.0
 
 scoreboard players set @a level_sharpness 0
 scoreboard players set @a level_protection 0
@@ -74,6 +75,9 @@ scoreboard objectives add broken_beds dummy
 scoreboard players set @a kills 0
 scoreboard players set @a finalkills 0
 scoreboard players set @a broken_beds 0
+
+scoreboard objectives remove irons
+scoreboard objectives add irons dummy
 
 #player id
 scoreboard objectives remove player_id
@@ -101,16 +105,6 @@ loot give @a loot items:melee/wooden_sword
 
 #add scoreboards
 function main:scoreboards/info
-
-#spawnpoint
-#execute at @e[tag=spawn_red,type=armor_stand] run spawnpoint @a[team=red] ~ ~ ~
-#execute at @e[tag=spawn_blue,type=armor_stand] run spawnpoint @a[team=blue] ~ ~ ~
-#execute at @e[tag=spawn_green,type=armor_stand] run spawnpoint @a[team=green] ~ ~ ~
-#execute at @e[tag=spawn_yellow,type=armor_stand] run spawnpoint @a[team=yellow] ~ ~ ~
-#execute at @e[tag=spawn_aqua,type=armor_stand] run spawnpoint @a[team=aqua] ~ ~ ~
-#execute at @e[tag=spawn_white,type=armor_stand] run spawnpoint @a[team=white] ~ ~ ~
-#execute at @e[tag=spawn_pink,type=armor_stand] run spawnpoint @a[team=pink] ~ ~ ~
-#execute at @e[tag=spawn_gray,type=armor_stand] run spawnpoint @a[team=gray] ~ ~ ~
 
 #spawn name visible 0b
 execute as @e[type=armor_stand,tag=spawn] run data modify entity @s CustomNameVisible set value 0b
@@ -154,10 +148,6 @@ gamerule naturalRegeneration true
 
 #bed
 tag @e[tag=bed] remove destroyed
-
-#tick on
-# function main:game/tick
-# function items:tick
 
 #lobby tick off
 schedule clear main:lobby
@@ -208,7 +198,7 @@ execute as @a run item replace entity @s enderchest.26 with air
 
 title @a times 10 40 10
 title @a subtitle {"text": "Good Luck!","color": "gold"}
-title @a title {"text": "BedWars","color":"yellow"}
+title @a title {"text": "Bed Wars","color":"yellow"}
 
 #tellraw
 function main:game/tellraw/gamestart
@@ -240,3 +230,7 @@ execute unless entity @a[team=aqua] as @e[type=armor_stand,tag=bed_aqua] run tag
 execute unless entity @a[team=white] as @e[type=armor_stand,tag=bed_white] run tag @s add destroyed
 execute unless entity @a[team=pink] as @e[type=armor_stand,tag=bed_pink] run tag @s add destroyed
 execute unless entity @a[team=gray] as @e[type=armor_stand,tag=bed_gray] run tag @s add destroyed
+
+#op item
+execute store result score $op_item mode run random value 0..1
+execute if score $op_item mode matches 1 run tellraw @a "OP ITEM -> [Mace]"

@@ -13,20 +13,16 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Counter Trap",
-                  "color": "yellow"
+                  "color": "yellow",
+                  "italic": false
                 }
               },
               {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  {
-                    "text": "Counter Trap",
-                    "color": "dark_gray",
-                    "italic": false 
-                  },
                   {
                     "text": "陣地の近くにいる味方に移動速度上昇 II と",
                     "color": "gray",

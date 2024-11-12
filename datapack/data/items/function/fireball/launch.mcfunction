@@ -6,7 +6,7 @@ execute store result score $y1 pos run data get storage pos:player Pos[1] 1000
 scoreboard players add $y1 pos 1500
 execute store result score $z1 pos run data get storage pos:player Pos[2] 1000
 
-execute at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run summon fireball ~ ~ ~ {ExplosionPower:2b,Tags:["fireball","new"],PortalCooldown:100,Passengers:[{id:"minecraft:marker",Tags:["fireballDeath"]}]}
+execute at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run summon fireball ~ ~ ~ {ExplosionPower:0b,Tags:["fireball","new"],PortalCooldown:100,Passengers:[{id:"minecraft:marker",Tags:["fireballDeath"]}]}
 # execute at @s positioned ~ ~1.5 ~ positioned ^ ^ ^1 run summon fireball ~ ~ ~ {ExplosionPower:0b,Tags:["fireball","new"],PortalCooldown:100,Passengers:[{id:"minecraft:marker",Tags:["fireballDeath"]}]}
 
 data modify storage pos:fireball Pos set from entity @n[type=fireball,tag=fireball,tag=new] Pos

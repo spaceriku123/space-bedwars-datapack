@@ -10,6 +10,1267 @@
           "text": "✘",
           "color": "red"
         }
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Wool",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:wools}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Glass",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:glasses}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Terracotta",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:terracotta}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "End Stone",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.4": {
+                "components": {
+                  "minecraft:custom_data": "{shop:endstone}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Ladder",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.5": {
+                "components": {
+                  "minecraft:custom_data": "{shop:ladder}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Planks",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.6": {
+                "components": {
+                  "minecraft:custom_data": "{shop:planks}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Obsidian",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.7": {
+                "components": {
+                  "minecraft:custom_data": "{shop:obsidian}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Cobweb",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.10": {
+                "components": {
+                  "minecraft:custom_data": "{shop:cobweb}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Stone Sword",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:stone_sword}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Iron Sword",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:iron_sword}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Diamond Sword",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:diamond_sword}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Stick (Knockback I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.4": {
+                "components": {
+                  "minecraft:custom_data": "{shop:stick}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Chainmail Armor",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:chainmail_armor}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Iron Armor",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:iron_armor}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Diamond Armor",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:diamond_armor}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Shears",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:shears}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Wooden Pickaxe (Efficiency I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:wooden_pickaxe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Iron Pickaxe (Efficiency I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:iron_pickaxe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Golden Pickaxe (Efficiency II, Sharpness II)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:golden_pickaxe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Diamond Pickaxe (Efficiency III)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:diamond_pickaxe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Wooden Axe (Efficiency I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:wooden_axe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Stone Axe (Efficiency I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:stone_axe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Iron Axe (Efficiency II)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:iron_axe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Diamond Axe (Efficiency III, Sharpness I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:diamond_axe}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Fishing Rod",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.4": {
+                "components": {
+                  "minecraft:custom_data": "{shop:fishing_rod}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Arrow",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:arrow}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Bow",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:bow}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Bow (Power I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:bow2}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Bow (Power I, Punch I)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.4": {
+                "components": {
+                  "minecraft:custom_data": "{shop:bow3}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Invisibility Potion (30 Seconds)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:potion_invisibility}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Speed II Potion (45 Seconds)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:potion_speed}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Jump V Potion (45 Seconds)",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:potion_jump}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Golden Apple",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:golden_apple}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "BedBugs",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.2": {
+                "components": {
+                  "minecraft:custom_data": "{shop:bedbugs}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Dream Defender",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.3": {
+                "components": {
+                  "minecraft:custom_data": "{shop:dream_defender}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Fireball",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.4": {
+                "components": {
+                  "minecraft:custom_data": "{shop:fireball}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "TNT",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.5": {
+                "components": {
+                  "minecraft:custom_data": "{shop:tnt}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Ender Pearl",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.6": {
+                "components": {
+                  "minecraft:custom_data": "{shop:ender_pearl}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Water Bucket",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.7": {
+                "components": {
+                  "minecraft:custom_data": "{shop:water_bucket}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Bridge Egg",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.10": {
+                "components": {
+                  "minecraft:custom_data": "{shop:bridge_egg}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Magic Milk",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.11": {
+                "components": {
+                  "minecraft:custom_data": "{shop:magic_milk}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Sponge",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.12": {
+                "components": {
+                  "minecraft:custom_data": "{shop:sponge}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Compact Pop-up Tower",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.13": {
+                "components": {
+                  "minecraft:custom_data": "{shop:tower}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Sharpened Swords",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.1": {
+                "components": {
+                  "minecraft:custom_data": "{shop:sharpness}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Heal Pool",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.11": {
+                "components": {
+                  "minecraft:custom_data": "{shop:healpool}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "It's a Trap!",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.5": {
+                "components": {
+                  "minecraft:custom_data": "{shop:its_a_trap}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Counter Trap",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.6": {
+                "components": {
+                  "minecraft:custom_data": "{shop:counter_trap}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Alarm Trap",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.7": {
+                "components": {
+                  "minecraft:custom_data": "{shop:alarm_trap}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Miner Fatigue Trap",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.14": {
+                "components": {
+                  "minecraft:custom_data": "{shop:miner_fatigue_trap}"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    
+
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Mace",
+        "color": "red",
+        "italic": false
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "container.4": {
+                "components": {
+                  "minecraft:custom_data": "{shop:mace}"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
   

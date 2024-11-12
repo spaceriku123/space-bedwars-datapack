@@ -38,3 +38,8 @@ execute at @s if score @p level_protection matches 3 if score @p diamonds matche
 execute at @s if score @p level_protection matches 3 unless score @p diamonds matches 16.. run item modify entity @s container.2 shop:buy0b_lore
 execute at @s if score @p level_protection matches 3 unless score @p diamonds matches 16.. run item modify entity @s container.2 shop:buy0b_customdata
 
+
+execute at @s if score @p level_protection matches 0 unless score @p diamonds matches 2.. run item modify entity @s container.2 shop:upgrades/buy0b/protection1
+execute at @s if score @p level_protection matches 1 unless score @p diamonds matches 4.. run item modify entity @s container.2 shop:upgrades/buy0b/protection2
+execute at @s if score @p level_protection matches 2 unless score @p diamonds matches 8.. run item modify entity @s container.2 shop:upgrades/buy0b/protection3
+execute at @s if score @p level_protection matches 3 unless score @p diamonds matches 16.. run item modify entity @s container.2 shop:upgrades/buy0b/protection4

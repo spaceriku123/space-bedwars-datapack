@@ -33,6 +33,9 @@
         "slime_block",
         "fire",
         "sponge",
-        "wet_sponge"
+        "wet_sponge",
+        "#lucky_block:glasses",
+        "emerald_block",
+        "gold_block"
     ]
 }

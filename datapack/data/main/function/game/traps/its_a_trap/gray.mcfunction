@@ -4,9 +4,9 @@ title @a[team=gray] subtitle ""
 title @a[team=gray] title {"text": "Trap Activated!","color": "yellow"}
 
 #@s
-title @s times 10 40 10
-title @s subtitle ""
-title @s title {"text": "It's a Trap!","color": "red"}
+# title @s times 10 40 10
+# title @s subtitle ""
+# title @s title {"text": "It's a Trap!","color": "red"}
 effect give @s blindness 8 0 true
 effect give @s slowness 8 0 true
 

@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "break_lb2": {
+        "min": 1
+      }
+    }
+  }
+  

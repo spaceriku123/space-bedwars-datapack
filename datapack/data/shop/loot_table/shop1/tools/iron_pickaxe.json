@@ -13,15 +13,28 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Iron Pickaxe (Efficiency I)",
-                  "color": "green"
+                  "color": "green",
+                  "italic": false
                 }
               },
               {
                 "function": "minecraft:set_lore",
                 "lore": [
+                  {
+                    "text": "レベル: ",
+                    "color": "light_purple",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "2",
+                        "color": "yellow",
+                        "italic": false
+                      }
+                    ]
+                  },
                   {
                     "text": "コスト: ",
                     "color": "gray",

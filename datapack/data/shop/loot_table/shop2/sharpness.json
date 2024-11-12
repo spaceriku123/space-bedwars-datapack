@@ -13,20 +13,16 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Sharpened Swords",
-                  "color": "yellow"
+                  "color": "yellow",
+                  "italic": false
                 }
               },
               {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  {
-                    "text": "Sharpened Swords",
-                    "color": "dark_gray",
-                    "italic": false 
-                  },
                   {
                     "text": "チーム全員の剣に、ダメージ増加 I が付与される。",
                     "color": "gray",

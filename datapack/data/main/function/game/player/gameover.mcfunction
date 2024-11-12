@@ -57,3 +57,12 @@ execute unless score @s team matches ..1 as @s run function main:game/player/tel
 
 tag @s remove magic_milk
 scoreboard players reset @s magic_milk_timer
+
+execute if entity @s[team=red] if entity @a[team=red,tag=!gameover] run function main:game/player/ender_chest/red
+execute if entity @s[team=blue] if entity @a[team=blue,tag=!gameover] run function main:game/player/ender_chest/blue
+execute if entity @s[team=green] if entity @a[team=green,tag=!gameover] run function main:game/player/ender_chest/green
+execute if entity @s[team=yellow] if entity @a[team=yellow,tag=!gameover] run function main:game/player/ender_chest/yellow
+execute if entity @s[team=aqua] if entity @a[team=aqua,tag=!gameover] run function main:game/player/ender_chest/aqua
+execute if entity @s[team=white] if entity @a[team=white,tag=!gameover] run function main:game/player/ender_chest/white
+execute if entity @s[team=pink] if entity @a[team=pink,tag=!gameover] run function main:game/player/ender_chest/pink
+execute if entity @s[team=gray] if entity @a[team=gray,tag=!gameover] run function main:game/player/ender_chest/gray

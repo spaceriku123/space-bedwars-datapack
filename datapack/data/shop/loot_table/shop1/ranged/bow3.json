@@ -13,10 +13,11 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Bow (Power I, Punch I)",
-                  "color": "green"
+                  "color": "green",
+                  "italic": false
                 }
               },
               {

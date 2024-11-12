@@ -1,10 +1,11 @@
 scoreboard players remove $game_timer game_timer 1
 
 #check time
-execute if score $game_timer game_timer matches 300 run scoreboard players display name $time info [{"text": "Emerald 3 -> ","color": "green"},{"text": "5 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 240 run scoreboard players display name $time info [{"text": "Emerald 3 -> ","color": "green"},{"text": "4 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 180 run scoreboard players display name $time info [{"text": "Emerald 3 -> ","color": "green"},{"text": "3 Mins","color": "white"}]
-execute if score $game_timer game_timer matches 120 run scoreboard players display name $time info [{"text": "Emerald 3 -> ","color": "green"},{"text": "2 Mins","color": "white"}]
+execute if score $game_timer game_timer matches 301..360 run function main:game/timer/emerald3_timer_60_6
+execute if score $game_timer game_timer matches 241..300 run function main:game/timer/emerald3_timer_60_5
+execute if score $game_timer game_timer matches 181..240 run function main:game/timer/emerald3_timer_60_4
+execute if score $game_timer game_timer matches 121..180 run function main:game/timer/emerald3_timer_60_3
+execute if score $game_timer game_timer matches 61..120 run function main:game/timer/emerald3_timer_60_2
 execute if score $game_timer game_timer matches 1..60 run function main:game/timer/emerald3_timer_60
 
 execute if score $game_timer game_timer matches 1 run schedule function main:generator/emeralds/tier_iii 1s

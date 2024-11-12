@@ -4,19 +4,19 @@
     # execute as @e[type=armor_stand,tag=bed_aqua] at @s if entity @p[predicate=main:destroy_bed,team=aqua] run scoreboard players reset @a destroy_bed
     execute as @e[type=armor_stand,tag=bed_aqua] at @s as @p[predicate=main:destroy_bed] if entity @s[predicate=main:destroy_bed,team=aqua] run return fail
 
-execute as @a[team=aqua] at @s run playsound entity.wither.death master @s ~ ~ ~ 0.6
-execute at @e[tag=bed_aqua] run playsound entity.ender_dragon.ambient master @a[team=!aqua] ~ ~ ~
+execute as @a[team=aqua] at @s run playsound entity.wither.death master @s ~ ~ ~ 0.5
+execute at @e[tag=bed_aqua] run playsound entity.ender_dragon.ambient master @a[team=!aqua] ~ ~ ~ 0.5
 # execute at @e[tag=bed_aqua] run effect give @a[distance=..4] resistance 1 99 true
 # execute at @e[tag=bed_aqua] run summon lightning_bolt ~ ~ ~
 
 tag @a[team=aqua] add final
 
 title @a times 10 40 10
-title @a[team=aqua] subtitle {"text": "You will no longer respawn!","color": "white"}
-title @a[team=aqua] title {"text": "BED DESTROYED!","color": "red"}
+title @a[team=aqua] subtitle {"text": "もう二度とリスポーンできません！","color": "white"}
+title @a[team=aqua] title {"text": "ベッドが破壊された！","bold":true,"color": "red"}
 
 execute as @a[predicate=main:destroy_bed] run tellraw @a ""
-execute as @a[predicate=main:destroy_bed] run tellraw @a [{"text": "","color": "gray"},{"text": "BED DESTRUCTION > ","color": "white","bold": true},{"text": "Aqua Bed","color": "aqua"},{"text": " は "},{"selector": "@s"},{"text": " に破壊されました！"}]
+execute as @a[predicate=main:destroy_bed] run tellraw @a [{"text": "","color": "gray"},{"text": "BED DESTRUCTION > ","color": "white","bold": true},{"text": "Aqua Bed","color": "aqua"},{"text": "は "},{"selector": "@s"},{"text": " に破壊された！"}]
 execute as @a[predicate=main:destroy_bed] run tellraw @a ""
 
 function main:game/destroy_bed/scoreboard/aqua

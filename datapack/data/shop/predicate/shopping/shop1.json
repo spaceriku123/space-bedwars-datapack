@@ -4,6 +4,9 @@
   "predicate": {
     "type_specific": {
       "type": "minecraft:player",
+      "gamemode": [
+        "adventure"
+      ],
       "looking_at": {
         "nbt": "{Tags:[\"npcshop1\"]}"
       }

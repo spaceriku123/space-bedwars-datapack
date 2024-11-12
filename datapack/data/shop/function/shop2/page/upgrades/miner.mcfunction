@@ -23,3 +23,5 @@ execute at @s if score @p level_miner matches 1 unless score @p diamonds matches
 execute at @s if score @p level_miner matches 1 unless score @p diamonds matches 4.. run item modify entity @s container.3 shop:buy0b_customdata
 
 
+execute at @s if score @p level_miner matches 0 unless score @p diamonds matches 2.. run item modify entity @s container.3 shop:upgrades/buy0b/miner1
+execute at @s if score @p level_miner matches 1 unless score @p diamonds matches 4.. run item modify entity @s container.3 shop:upgrades/buy0b/miner2

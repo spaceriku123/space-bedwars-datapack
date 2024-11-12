@@ -13,22 +13,12 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Iron Forge",
-                  "color": "yellow"
+                  "color": "yellow",
+                  "italic": false
                 }
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "text": "Iron Forge",
-                    "color": "dark_gray",
-                    "italic": false 
-                  }
-                ],
-                "mode": "append"
               },
               {
                 "function": "minecraft:set_custom_data",

@@ -14,7 +14,10 @@
               {
                 "function": "minecraft:set_name",
                 "target": "item_name",
-                "name": "Bridge Egg"
+                "name": {
+                  "text": "Bridge Egg",
+                  "color": "aqua"
+                }
               },
               {
                 "function": "minecraft:set_custom_data",

@@ -1,8 +1,8 @@
 gamemode spectator @s
 
 title @a times 0 80 20
-title @s subtitle "You will respawn in 5 seconds!"
-title @s title {"text": "YOU DIED!","color": "red"}
+title @s subtitle [{"text": "","color": "yellow"},{"text": "5","color": "red"},{"text": " 秒で復活します"}]
+title @s title {"text": "死んでしまった！","color": "red","bold": true}
 
 execute store result score @s irons run clear @s iron_ingot 0
 execute store result score @s golds run clear @s gold_ingot 0

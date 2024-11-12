@@ -7,5 +7,5 @@ execute if entity @s[tag=white] at @s run summon silverfish ~ ~ ~ {Tags:["mob","
 execute if entity @s[tag=pink] at @s run summon silverfish ~ ~ ~ {Tags:["mob","bedbugs"],Team:"pink",CustomName:'{"text": "Pink Silverfish","color": "light_purple"}',CustomNameVisible:1b}
 execute if entity @s[tag=gray] at @s run summon silverfish ~ ~ ~ {Tags:["mob","bedbugs"],Team:"gray",CustomName:'{"text": "Gray Silverfish","color": "dark_gray"}',CustomNameVisible:1b}
 
-execute unless score $version mode matches 1.. as @e[type=silverfish,tag=bedbugs] run attribute @s generic.attack_damage base set 3.0
-execute if score $version mode matches 1 as @e[type=silverfish,tag=bedbugs] run attribute @s generic.attack_damage base set 4.0
+execute unless score $version mode matches 1.. as @e[type=silverfish,tag=bedbugs] run attribute @s attack_damage base set 3.0
+execute if score $version mode matches 1 as @e[type=silverfish,tag=bedbugs] run attribute @s attack_damage base set 4.0

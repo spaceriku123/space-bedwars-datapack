@@ -13,20 +13,16 @@
               },
               {
                 "function": "minecraft:set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Heal Pool",
-                  "color": "yellow"
+                  "color": "yellow",
+                  "italic": false
                 }
               },
               {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  {
-                    "text": "Heal Pool",
-                    "color": "dark_gray",
-                    "italic": false 
-                  },
                   {
                     "text": "自分の陣地にいる際、再生能力 I が常時付与される。",
                     "color": "gray",

@@ -1,7 +1,7 @@
 #info board
 scoreboard objectives remove info
 scoreboard objectives add info dummy
-scoreboard objectives modify info displayname [{"text":"BedWars","bold":true,"color": "white"}]
+scoreboard objectives modify info displayname [{"text":"Bed Wars","color": "gold","bold": true}]
 scoreboard objectives setdisplay sidebar info
 scoreboard objectives modify info numberformat blank
 
@@ -18,29 +18,30 @@ execute if entity @e[tag=bed_aqua] if entity @e[tag=spawn_aqua] run scoreboard p
 execute if entity @e[tag=bed_white] if entity @e[tag=spawn_white] run scoreboard players set $white info 11
 execute if entity @e[tag=bed_pink] if entity @e[tag=spawn_pink] run scoreboard players set $pink info 10
 execute if entity @e[tag=bed_gray] if entity @e[tag=spawn_gray] run scoreboard players set $gray info 9
-scoreboard players set $space3 info -1
-scoreboard players set $op_item info -2
-scoreboard players set $version info -3
-# scoreboard players set $line2 info -4
-# scoreboard players set $credit info -3
+scoreboard players set $space3 info 0
+# scoreboard players set $op_item info -1
+# scoreboard players set $version info -2
+# scoreboard players set $space4 info -3
+scoreboard players set $credit info -4
 
-scoreboard players display name $space1 info "                          "
+scoreboard players display name $space1 info ""
 scoreboard players display name $space2 info ""
 scoreboard players display name $space3 info ""
+# scoreboard players display name $space4 info ""
 
 # scoreboard players display name $line1 info {"text": "                               ","color": "gray","strikethrough": true}
 # scoreboard players display name $line2 info {"text": "                               ","color": "gray","strikethrough": true}
-# scoreboard players display name $credit info {"text": "by spaceriku123"}
+scoreboard players display name $credit info {"text": "SPACE-BW-DP v0.2.0","color": "yellow"}
 
 #op item
-execute unless score $op_item mode matches 1.. run scoreboard players display name $op_item info [{"text": "OP ITEM: "},{"text": "None","color": "gray"}]
-execute if score $op_item mode matches 1 run scoreboard players display name $op_item info [{"text": "OP ITEM: "},{"text": "Mace","color": "light_purple"}]
+# execute unless score $op_item mode matches 1.. run scoreboard players display name $op_item info [{"text": "OP ITEM: "},{"text": "None","color": "gray"}]
+# execute if score $op_item mode matches 1 run scoreboard players display name $op_item info [{"text": "OP ITEM: "},{"text": "Mace","color": "light_purple"}]
 
-#version
-execute unless score $version mode matches 1.. run scoreboard players display name $version info [{"text": "Version: "},{"text": "v1.21","color": "gray"}]
-execute if score $version mode matches 1 run scoreboard players display name $version info [{"text": "Version: "},{"text": "v1.8","color": "gray"}]
+# #version
+# execute unless score $version mode matches 1.. run scoreboard players display name $version info [{"text": "Version: "},{"text": "v1.21","color": "gray"}]
+# execute if score $version mode matches 1 run scoreboard players display name $version info [{"text": "Version: "},{"text": "v1.8","color": "gray"}]
 
-scoreboard players display name $time info [{"text": "Diamond 2 -> ","color": "aqua"},{"text": "5 Mins","color": "white"}]
+scoreboard players display name $time info [{"text": "Diamond 2 -> ","color": "aqua"},{"text": "6:00","color": "white"}]
 
 execute if entity @a[team=red] run scoreboard players display name $red info [{"text": "🏴 ","color": "red"},{"text": "Red: ","color": "white"},{"text": "✔","color": "green"}]
 execute if entity @a[team=blue] run scoreboard players display name $blue info [{"text": "🏴 ","color": "blue"},{"text": "Blue: ","color": "white"},{"text": "✔","color": "green"}]

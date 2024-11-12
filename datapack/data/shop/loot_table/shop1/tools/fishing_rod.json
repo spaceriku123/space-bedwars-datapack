@@ -13,10 +13,11 @@
               },
               {
                 "function": "set_name",
-                "target": "item_name",
+                "target": "custom_name",
                 "name": {
                   "text": "Fishing Rod",
-                  "color": "green"
+                  "color": "green",
+                  "italic": false
                 }
               },
               {

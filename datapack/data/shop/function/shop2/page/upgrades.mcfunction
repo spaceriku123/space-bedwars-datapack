@@ -12,7 +12,7 @@ function shop:shop2/page/upgrades/sharpness
 function shop:shop2/page/upgrades/protection
 function shop:shop2/page/upgrades/miner
 function shop:shop2/page/upgrades/forge
-function shop:shop2/page/upgrades/healpool
+execute if score $version mode matches 1 run function shop:shop2/page/upgrades/healpool
 
 ###
 # loot replace entity @s container.9 loot shop:shop2/empty

@@ -32,7 +32,7 @@ function main:game/get_items/tools/pickaxe
 function main:game/get_items/tools/axe
 
 title @s times 10 20 10
-title @s subtitle ""
-title @s title {"text": "RESPAWNED!","color": "green"}
+title @s subtitle {"text": "復活しました！","color": "green"}
+title @s title ""
 
 tag @s add respawn

@@ -1,0 +1,10 @@
+{
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "target": "custom_name",
+    "name": {
+      "text": "Gold Forge",
+      "color": "red",
+      "italic": false
+    }
+  }

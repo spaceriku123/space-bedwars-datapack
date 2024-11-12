@@ -1,0 +1,42 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "item_name",
+                "name": "Spicy Sword"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:fire_aspect": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:can_break": {
+                        "predicates": [
+                          {
+                            "blocks": "#bedwars:blocks"
+                          }
+                        ],
+                        "show_in_tooltip": false
+                      },
+                    "!minecraft:max_damage": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint_and_steel",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "can_place_on": {
+                  "predicates": [
+                    {}
+                  ]
+                },
+                  "minecraft:can_break": {
+                      "predicates": [
+                        {
+                          "blocks": "#bedwars:blocks"
+                        }
+                      ],
+                      "show_in_tooltip": false
+                    }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

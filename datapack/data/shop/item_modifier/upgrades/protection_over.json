@@ -74,6 +74,16 @@
       "components": {
         "minecraft:enchantment_glint_override": true
       }
+    },
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "target": "custom_name",
+      "name": {
+        "text": "Reinforced Armor IV",
+        "color": "red",
+        "italic": false
+      }
     }
   ]
   
